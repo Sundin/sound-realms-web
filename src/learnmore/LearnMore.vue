@@ -26,6 +26,8 @@
             character's progress.
           </p>
 
+          <img src="../assets/skull_and_scroll.png" class="image-small"/>
+
           <h1>The story so far</h1>
           <p>
             The idea was formed in Oscar Carlquist's head a long, long time ago.
@@ -65,6 +67,13 @@
             ready for download!
           </p>
 
+          <img src="../assets/vemhir.png" class="image-large"/>
+        </div>
+      </section>
+      <GametestStrip/>
+      <section>
+        <div class="section-content">
+
           <h1>The games</h1>
           <p>
             To digitalise solo RPG rules comes with many advantages. A digital
@@ -82,6 +91,8 @@
             are also introduced with the exact right timing to create the most
             captivating and dramatic experience possible.
           </p>
+          <img src="../assets/chain_and_balls.png" class="image-small"/>
+
           <h1>A platform of audio based games and other audio content</h1>
           <p>
             Our vision is for Sound Realms to in time feature not only Varghand
@@ -94,9 +105,11 @@
             it incarnate together with us and help us develop it and see it
             progress with the help of your feedback.
           </p>
+
+          <img src="../assets/VemhirsCastle.png" class="image-large"/>
         </div>
       </section>
-      <GametestStrip/>
+      <div class="strip"/>
       <Footer />
     </div>
   </main-layout>
@@ -132,5 +145,19 @@ export default {
   height: auto;
   object-fit: scale-down;
 }
-
+.image-large {
+  max-height: 666px;
+}
+.image-small {
+  max-height: 200px;
+}
+.strip {
+  background-color: #672a66;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>

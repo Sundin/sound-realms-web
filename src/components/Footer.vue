@@ -72,5 +72,10 @@ export default {
 }
 .links > a {
   padding: 30px;
+  width: 110px;
+  text-align:center;display:block;
+}
+@media screen and (max-width:540px){
+  .links > a  {width: unset;}
 }
 </style>
