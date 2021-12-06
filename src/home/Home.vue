@@ -68,7 +68,8 @@
         </p>
       </div>
       <div class="gallery">
-        <img src="../assets/dice_and_book.jpg" />
+        <!-- <img src="../assets/dice_and_book.jpg" /> -->
+<iframe width="875" height="492" src="https://www.youtube.com/embed/4FMkHwHB8pM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
 
