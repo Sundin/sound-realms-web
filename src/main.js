@@ -23,6 +23,14 @@ const vm = new Vue({
   render(createElement) {
     return createElement(this.ViewComponent);
   },
+  watch: {
+    // watching top-level property
+    currentRoute(val, oldVal) {
+      if (val !== oldVal) {
+        window.scrollTo(0, 0);
+      }
+    },
+  },
 });
 
 vm.$mount('#app');
