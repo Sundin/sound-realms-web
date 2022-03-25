@@ -134,7 +134,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .row {
   display: flex;

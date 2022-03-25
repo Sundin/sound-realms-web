@@ -1,4 +1,3 @@
-
 <template>
   <a v-bind:href="href" v-bind:class="{ active: isActive }" v-on:click="go">
     <slot></slot>
@@ -6,7 +5,7 @@
 </template>
 
 <script>
-import routes from '../routes';
+import routes from '../router';
 
 export default {
   props: {

@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import routes from '../routes';
-
 export default {
   props: {
     inverted: {
@@ -32,8 +30,7 @@ export default {
         return;
       }
 
-      this.$root.currentRoute = this.href;
-      window.history.pushState(null, routes[this.href], this.href);
+      this.$router.push(this.href);
     },
   },
 };
