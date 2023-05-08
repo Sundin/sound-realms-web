@@ -1,41 +1,54 @@
 <template>
   <main-layout>
     <div class="content">
-      <TopMenu/>
+      <TopMenu />
       <div class="section-content">
         <h1>Take heed adventurer!</h1>
         <p>
-          Do you have the courage to explore the perilous halls of Vemhir the
-          Soulbinder’s ancient castle? Find out in this very first demo adventure
-          for Sound Realms &mdash; Mace & Magic.
+          <strong>Sound Realms</strong> is an interactive audio adventure app. Featuring great
+          adventures, presented with top class voice-over performances, original orchestral music,
+          cinematic sound effects, digital RPG dice rolls, digital character sheets, skills, spells,
+          swords and monsters!
         </p>
-        <p>Click or scan one of the QR codes below:</p>
-        <div>
+        <p>
+          Download Sound Realms for free through Google Play or App Store and begin your adventure
+          now.
+        </p>
+        <div class="columns">
           <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
-          <img src="../assets/gametest/android_qr.png" class="qr"/>
+            <img src="../assets/gametest/google-play-badge.png" class="qr" />
           </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
+            <img src="../assets/gametest/android_qr.png" class="qr" />
+          </a>
+
           <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
-          <img src="../assets/gametest/ios_qr.png"  class="qr"/>
+            <img src="../assets/gametest/app-store-badge.png" class="qr" />
+          </a>
+
+          <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
+            <img src="../assets/gametest/ios_qr.png" class="qr" />
           </a>
         </div>
-        <img src="../assets/4skeletons.png" class="image"/>
+
         <p>
-          Please use quality headphones for a full, immersive 360 surround sound
-          experience!
+          Please use quality headphones for a full, immersive 360 surround sound experience.
         </p>
         <p>
-          Keep in mind that this is just our demo adventure. Stay alert for regular
-          updates and please report any bugs immediately to: <a href="mailto:app@sound-realms.com">app@sound-realms.com</a>.
+          Stay alert for regular updates and please report any bugs to:
+          <a href="mailto:gustav@varghand.com">gustav@varghand.com</a>!
         </p>
 
         <div class="strip">
           <h1>Sign up for newsletter</h1>
           <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
-          <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"/>
+          <iframe
+            src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"
+          />
         </div>
-
       </div>
-      <MainFooter/>
+      <MainFooter />
     </div>
   </main-layout>
 </template>
@@ -56,6 +69,11 @@ export default {
 </script>
 
 <style scoped>
+.columns {
+  column-count: 2;
+  column-gap: 40px;
+  max-width: 500px;
+}
 .bg {
   background-image: url("../assets/pergament_background.jpg");
   width: 100%;
@@ -77,8 +95,11 @@ export default {
   object-fit: scale-down;
 }
 .qr {
-  padding: 30px;
-  max-width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .image {
   max-height: 500px;
