@@ -41,8 +41,8 @@
           <a href="mailto:gustav@varghand.com">gustav@varghand.com</a>!
         </p>
 
+        <h1>Sign up for newsletter</h1>
         <div class="strip">
-          <h1>Sign up for newsletter</h1>
           <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
           <iframe
             src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"
@@ -108,6 +108,7 @@ export default {
 
 h1 {
   color: black;
+  max-width: 100%;
 }
 
 iframe {
