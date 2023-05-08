@@ -33,8 +33,9 @@
         </div>
 
         <p>
-          Please use quality headphones for a full, immersive 360 surround sound experience.
+          <i>Please use quality headphones for a full, immersive 360 surround sound experience.</i>
         </p>
+        <p><img src="../assets/gametest/headphones.png" class="image" /></p>
         <p>
           Stay alert for regular updates and please report any bugs to:
           <a href="mailto:gustav@varghand.com">gustav@varghand.com</a>!
@@ -102,7 +103,7 @@ export default {
   margin-right: auto;
 }
 .image {
-  max-height: 500px;
+  max-height: 200px;
 }
 
 h1 {
