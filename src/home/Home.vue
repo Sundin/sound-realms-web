@@ -1,140 +1,115 @@
 <template>
   <main-layout>
     <div class="content">
-      <img alt="Sound Realms logo" class="topImage" src="../assets/sound_realms_mace_and_magic.jpg" />
+      <img alt="Sound Realms logo" class="topImage" src="../assets/home/sr-cover-image.jpg" />
 
       <section>
         <div class="section-content">
           <h1>The first ever REAL audio solo roleplaying game</h1>
           <div class="text">
-            <p class="bold">
-              Now you can, whenever you have a moment to spare, hear fantastic worlds
-              unfold and have an unparalleled solo RPG experience. Now you can
-              roleplay more and do not have to rely upon getting your RPG group
-              together to sink your sword into a dragons heart or incinerate a
-              goblin with a fireball spell!
+            <p>
+              <strong>Sound Realms</strong> is an interactive audio adventure app. Featuring great
+              adventures, presented with top class voice-over performances, original orchestral
+              music, cinematic sound effects, digital RPG dice rolls, digital character sheets,
+              skills, spells, swords and monsters!
             </p>
             <p>
-              Sound Realms presents
-              <i>Mace & Magic</i>, the first ever real audio solo
-              roleplaying game set in a brand new dark fantasy realm bustling with
-              adventure, perilous challenges and adversaries.
-            </p>
-            <p>
-              Featuring great adventures, presented with top class voice-over
-              performances, original orchestral music, cinematic sound effects,
-              digital RPG dice rolls, digital character sheets, skills, spells,
-              swords and monsters!
-            </p>
-            <p>
-              Brace yourself and enter the Realm of
-              <i>MACE & MAGIC</i>!
+              Download Sound Realms for free through Google Play or App Store and begin your
+              adventure now.
             </p>
           </div>
+
+          <div class="columns">
+            <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
+              <img src="../assets/gametest/google-play-badge.png" class="qr" />
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
+              <img src="../assets/gametest/android_qr.png" class="qr" />
+            </a>
+
+            <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
+              <img src="../assets/gametest/app-store-badge.png" class="qr" />
+            </a>
+
+            <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
+              <img src="../assets/gametest/ios_qr.png" class="qr" />
+            </a>
+          </div>
+
           <img src="../assets/pile_of_bones.png" class="small-image" />
         </div>
       </section>
 
-      <KickstarterStrip2/>
+      <div class="strip">
+        <h1>Sign up for newsletter</h1>
+        <div class="section-content">
+          <p class="inverted">
+            Sign up for our newsletter if you want to stay up to date when we release new
+            adventures. Occassionally you will also receive free in-game bonus items and other
+            goodies.
+          </p>
+          <iframe
+            src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"
+          />
+        </div>
+      </div>
 
       <section>
         <div class="section-content">
-          <h1>THE Audio Adventure System</h1>
+          <h1>Our Games</h1>
           <p>
-            Sound Realms aim to deliver immersive and captivating experiences to the paperback RPG and solo adventure book audience but also to
-            offer the regular consumer of audio books or fantasy and sci-fi literature an experience beyond what ordinary audio books can offer.
-            Any consumer of mobile games will find Sound Realms interesting since it's game mechanics rely heavily upon the player using their
-            imagination to envision what happens in the game. This takes mobile gaming beyond tiny screens and touch fiddling into new realms
-            &mdash; Sound Realms.
+            Sound Realms is a platform where you will find a wide range of RPG audio solo
+            adventures. In the future we will expand this range to include many different genres and
+            styles &mdash; fantasy, horror, sci-fi and so on &mdash; but currently you will find two
+            separate Realms in the app. One is <i>Mace & Magic</i>, our own post-apocalyptic fantasy
+            world, and the other is <i>Lone Wolf: The Fortress of Death</i>, a direct continuation
+            of Joe Dever's classic Lone Wolf saga.
           </p>
-        </div>
-
-        <div class="video-wrap">
-          <div class="video-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/4FMkHwHB8pM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="video"
-            ></iframe>
-          </div>
         </div>
 
         <div class="section-content">
           <div class="row">
             <img src="../assets/dreadhorn.png" class="dreadhorn_image" />
-            <div class="row_column_2 text">
-              <p>
-                The first release on the Sound Realms platform will be
-                <i>Mace & Magic</i>, an audio based solo fantasy roleplaying game.
-                A demo adventure is available for game testing by selected parties now for iOS and Android devices.
-                We aim to use the free demo as a key element in a forthcoming crowdfunding campaign to release
-                an adventure of approximately 7 hours of playing time.
-                <i>Mace & Magic</i> is set in the brand-new world of "Mihr",
-                a dark fantasy realm strook by an apocalyptic event called "The Magiklysm",
-                making it an ideal environment for epic adventures.
-                Production of this adventure has already begun.
-              </p>
-              <p>
-                With
-                <i>Mace & Magic</i> we aim to explore and expand the possibilities of this new format not only in cutting edge programming
-                but also in the recording and usage of audio.
-                <i>Mace & Magic</i> uses a slightly modified version of Choasium Inc’s RPG rule set "Basic Roleplaying System" (BRP),
-                that we have successfully digitalised for a classic RPG experience, complete with dice roles and character sheets etc.
-              </p>
-            </div>
+            <img src="../assets/home/fod-round.png" class="dreadhorn_image" />
           </div>
         </div>
       </section>
 
-      <div class="hero">
-        <div class="hero-text">
-          <h2 class="inverted">Dare you enter the realm of Mace & Magic?</h2>
-          <p class="inverted">
-            Download the free demo adventure now, and always be rembered as a bold pioneer of adventuring, hero of
-            <i>Mace & Magic</i>!
-          </p>
-          <div>
-            <MyButton href="/download">Download Free Demo</MyButton>
-            <MyButton href="/faq" :inverted="true">Learn More</MyButton>
-          </div>
-        </div>
-        <img class="hero-image" src="../assets/mace_background.jpg" />
-      </div>
-
-        <div class="strip">
-          <h1>Sign up for newsletter</h1>
-          <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
-          <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"/>
-        </div>
-
-      <MainFooter/>
+      <MainFooter />
     </div>
   </main-layout>
 </template>
 
 <script>
-import MyButton from '../components/MyButton.vue';
+// import MyButton from '../components/MyButton.vue';
 import MainFooter from '../components/MainFooter.vue';
 import MainLayout from '../layouts/Main.vue';
-import KickstarterStrip2 from '../components/KickstarterStrip2.vue';
 
 export default {
   name: 'HomePage',
   components: {
-    MyButton,
+    // MyButton,
     MainFooter,
     MainLayout,
-    KickstarterStrip2,
   },
 };
 </script>
 
 <style scoped>
+.columns {
+  column-count: 2;
+  column-gap: 40px;
+  max-width: 500px;
+}
+.qr {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -192,7 +167,8 @@ img {
   align-items: center;
   width: 100%;
 }
-.hero-text > p,h2 {
+.hero-text > p,
+h2 {
   max-width: 960px;
   padding-left: 30px;
   padding-right: 30px;
@@ -251,12 +227,11 @@ img {
 
 .strip {
   background-color: #672a66;
-  min-height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 600px;
 }
 
 .strip > h1 {
