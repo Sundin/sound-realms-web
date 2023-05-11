@@ -62,16 +62,20 @@
             Sound Realms is a platform where you will find a wide range of RPG audio solo
             adventures. In the future we will expand this range to include many different genres and
             styles &mdash; fantasy, horror, sci-fi and so on &mdash; but currently you will find two
-            separate Realms in the app. One is <i>Mace & Magic</i>, our own post-apocalyptic fantasy
-            world, and the other is <i>Lone Wolf: The Fortress of Death</i>, a direct continuation
+            separate Realms in the app. One is <i><a href="/maceandmagic">Mace & Magic</a></i>, our own post-apocalyptic fantasy
+            world, and the other is <i><a href="/fortressofdeath">Lone Wolf: The Fortress of Death</a></i>, a direct continuation
             of Joe Dever's classic Lone Wolf saga.
           </p>
         </div>
 
         <div class="section-content">
           <div class="row">
-            <img src="../assets/dreadhorn.png" class="dreadhorn_image" />
-            <img src="../assets/home/fod-round.png" class="dreadhorn_image" />
+            <a href="/maceandmagic" class="dreadhorn_image">
+              <img src="../assets/dreadhorn.png" alt="Mace & Magic" />
+            </a>
+            <a href="/fortressofdeath" class="dreadhorn_image">
+              <img src="../assets/home/fod-round.png" alt="Lone Wolf: The Fortress of Death" />
+            </a>
           </div>
         </div>
       </section>

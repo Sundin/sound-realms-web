@@ -5,15 +5,23 @@
       <div class="section-content">
         <h1>The Fortress of Death</h1>
 
-        <img src="../assets/fortressofdeath_info_2.jpg" class="image" />
+        <img src="../../assets/fortressofdeath_info_2.jpg" class="image" />
         <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death" target="_blank">
-          <img src="../assets/fod_kickstarter.jpg" class="image" />
+          <img src="../../assets/fod_kickstarter.jpg" class="image" />
         </a>
       </div>
       <div class="strip">
         <h1>Sign up for newsletter</h1>
-        <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
-        <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb" />
+        <div class="section-content">
+          <p class="inverted">
+            Sign up for our newsletter if you want to stay up to date when we release new
+            adventures. Occassionally you will also receive free in-game bonus items and other
+            goodies.
+          </p>
+          <iframe
+            src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"
+          />
+        </div>
       </div>
       <MainFooter />
     </div>
@@ -21,9 +29,9 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
+import MainLayout from '../../layouts/Main.vue';
+import MainFooter from '../../components/MainFooter.vue';
+import TopMenu from '../../components/TopMenu.vue';
 
 export default {
   name: 'FortressOfDeath',
@@ -37,7 +45,7 @@ export default {
 
 <style scoped>
 .bg {
-  background-image: url("../assets/pergament_background.jpg");
+  background-image: url("../../assets/pergament_background.jpg");
   width: 100%;
   min-height: 100%;
   background-position: center;
@@ -73,12 +81,11 @@ iframe {
 
 .strip {
   background-color: #672a66;
-  min-height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 600px;
 }
 
 .strip > h1 {

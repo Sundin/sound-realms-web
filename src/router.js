@@ -10,7 +10,8 @@ import PrivacyPolicy from './privacy/PrivacyPolicy.vue';
 import PrivacyPolicy2 from './privacy/PrivacyPolicy2.vue';
 import PrivacyPolicy3 from './privacy/PrivacyPolicy3.vue';
 import Newsletter from './newsletter/Newsletter.vue';
-import FortressOfDeath from './fortressofdeath/FortressOfDeath.vue';
+import FortressOfDeath from './adventures/fortressofdeath/FortressOfDeath.vue';
+import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
 import NotFound from './pages/NotFound.vue';
 
 const routes = [
@@ -26,6 +27,7 @@ const routes = [
   { path: '/privacypolicy', component: PrivacyPolicy2 },
   { path: '/privacy', component: PrivacyPolicy3 },
   { path: '/fortressofdeath', component: FortressOfDeath },
+  { path: '/maceandmagic', component: MaceAndMagic },
   { path: '/newsletter', component: Newsletter },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
