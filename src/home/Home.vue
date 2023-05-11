@@ -21,7 +21,7 @@
 
           <div class="columns">
             <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
-              <img src="../assets/gametest/google-play-badge.png" class="qr" />
+              <img src="../assets/gametest/google-play-badge.png" class="small-image"/>
             </a>
 
             <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
@@ -29,7 +29,7 @@
             </a>
 
             <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
-              <img src="../assets/gametest/app-store-badge.png" class="qr" />
+              <img src="../assets/gametest/app-store-badge.png" class="small-image"/>
             </a>
 
             <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
@@ -145,7 +145,8 @@ export default {
   width: 100%;
 }
 .small-image {
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 img {
@@ -221,6 +222,9 @@ h2 {
 @media screen and (max-width: 680px) {
   .hero-text {
     font-size: 0.8rem;
+  }
+  .qr {
+    display: none;
   }
 }
 @media screen and (max-width: 540px) {
