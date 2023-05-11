@@ -5,7 +5,7 @@
 
       <section>
         <div class="section-content">
-          <h1>The first ever REAL audio solo roleplaying game</h1>
+          <h1>The First Ever REAL Audio Solo Roleplaying Game</h1>
           <div class="text">
             <p class="bold">
               Now you can, whenever you have a moment to spare, hear fantastic worlds
@@ -107,7 +107,7 @@
       </div>
 
         <div class="strip">
-          <h1>Sign up for newsletter</h1>
+          <h1>Sign up for the Newsletter</h1>
           <p class="inverted">Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p>
           <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"/>
         </div>

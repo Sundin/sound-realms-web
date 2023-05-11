@@ -5,7 +5,7 @@
 
       <section>
         <div class="section-content">
-          <h1>The first ever REAL audio solo roleplaying game</h1>
+          <h1>The First Ever REAL Audio Solo Roleplaying Game</h1>
           <div class="text">
             <p>
               <strong>Sound Realms</strong> is an interactive audio adventure app. Featuring great
@@ -42,7 +42,7 @@
       </section>
 
       <div class="strip">
-        <h1>Sign up for newsletter</h1>
+        <h1>Sign up for the Newsletter</h1>
         <div class="section-content">
           <p class="inverted">
             Sign up for our newsletter if you want to stay up to date when we release new
@@ -101,6 +101,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .columns {
   column-count: 2;
   column-gap: 40px;

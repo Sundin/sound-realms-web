@@ -11,7 +11,7 @@
         </a>
       </div>
       <div class="strip">
-        <h1>Sign up for newsletter</h1>
+        <h1>Sign up for the Newsletter</h1>
         <div class="section-content">
           <p class="inverted">
             Sign up for our newsletter if you want to stay up to date when we release new
