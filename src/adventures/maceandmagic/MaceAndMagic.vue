@@ -1,30 +1,35 @@
 <template>
   <main-layout>
     <div class="content">
-      <a href="/"><img alt="Sound Realms logo" class="topImage" src="../../assets/sound_realms_mace_and_magic.jpg" /></a>
+      <div class="topImage">
+        <a href="/">
+          <img
+            alt="Sound Realms logo"
+            class="topImage"
+            src="../../assets/sound_realms_mace_and_magic.jpg"
+          />
+        </a>
+      </div>
 
       <section>
         <div class="section-content">
           <h1>The First Ever REAL Audio Solo Roleplaying Game</h1>
           <div class="text">
             <p class="bold">
-              Now you can, whenever you have a moment to spare, hear fantastic worlds
-              unfold and have an unparalleled solo RPG experience. Now you can
-              roleplay more and do not have to rely upon getting your RPG group
-              together to sink your sword into a dragons heart or incinerate a
-              goblin with a fireball spell!
+              Now you can, whenever you have a moment to spare, hear fantastic worlds unfold and
+              have an unparalleled solo RPG experience. Now you can roleplay more and do not have to
+              rely upon getting your RPG group together to sink your sword into a dragons heart or
+              incinerate a goblin with a fireball spell!
             </p>
             <p>
               Sound Realms presents
-              <i>Mace & Magic</i>, the first ever real audio solo
-              roleplaying game set in a brand new dark fantasy realm bustling with
-              adventure, perilous challenges and adversaries.
+              <i>Mace & Magic</i>, the first ever real audio solo roleplaying game set in a brand
+              new dark fantasy realm bustling with adventure, perilous challenges and adversaries.
             </p>
             <p>
-              Featuring great adventures, presented with top class voice-over
-              performances, original orchestral music, cinematic sound effects,
-              digital RPG dice rolls, digital character sheets, skills, spells,
-              swords and monsters!
+              Featuring great adventures, presented with top class voice-over performances, original
+              orchestral music, cinematic sound effects, digital RPG dice rolls, digital character
+              sheets, skills, spells, swords and monsters!
             </p>
             <p>
               Brace yourself and enter the Realm of
@@ -35,17 +40,19 @@
         </div>
       </section>
 
-      <KickstarterStrip2/>
+      <KickstarterStrip2 />
 
       <section>
         <div class="section-content">
           <h1>THE Audio Adventure System</h1>
           <p>
-            Sound Realms aim to deliver immersive and captivating experiences to the paperback RPG and solo adventure book audience but also to
-            offer the regular consumer of audio books or fantasy and sci-fi literature an experience beyond what ordinary audio books can offer.
-            Any consumer of mobile games will find Sound Realms interesting since it's game mechanics rely heavily upon the player using their
-            imagination to envision what happens in the game. This takes mobile gaming beyond tiny screens and touch fiddling into new realms
-            &mdash; Sound Realms.
+            Sound Realms aim to deliver immersive and captivating experiences to the paperback RPG
+            and solo adventure book audience but also to offer the regular consumer of audio books
+            or fantasy and sci-fi literature an experience beyond what ordinary audio books can
+            offer. Any consumer of mobile games will find Sound Realms interesting since it's game
+            mechanics rely heavily upon the player using their imagination to envision what happens
+            in the game. This takes mobile gaming beyond tiny screens and touch fiddling into new
+            realms &mdash; Sound Realms.
           </p>
         </div>
 
@@ -70,21 +77,21 @@
             <div class="row_column_2 text">
               <p>
                 The first release on the Sound Realms platform will be
-                <i>Mace & Magic</i>, an audio based solo fantasy roleplaying game.
-                A demo adventure is available for game testing by selected parties now for iOS and Android devices.
-                We aim to use the free demo as a key element in a forthcoming crowdfunding campaign to release
-                an adventure of approximately 7 hours of playing time.
-                <i>Mace & Magic</i> is set in the brand-new world of "Mihr",
-                a dark fantasy realm strook by an apocalyptic event called "The Magiklysm",
-                making it an ideal environment for epic adventures.
-                Production of this adventure has already begun.
+                <i>Mace & Magic</i>, an audio based solo fantasy roleplaying game. A demo adventure
+                is available for game testing by selected parties now for iOS and Android devices.
+                We aim to use the free demo as a key element in a forthcoming crowdfunding campaign
+                to release an adventure of approximately 7 hours of playing time.
+                <i>Mace & Magic</i> is set in the brand-new world of "Mihr", a dark fantasy realm
+                strook by an apocalyptic event called "The Magiklysm", making it an ideal
+                environment for epic adventures. Production of this adventure has already begun.
               </p>
               <p>
                 With
-                <i>Mace & Magic</i> we aim to explore and expand the possibilities of this new format not only in cutting edge programming
-                but also in the recording and usage of audio.
-                <i>Mace & Magic</i> uses a slightly modified version of Choasium Inc’s RPG rule set "Basic Roleplaying System" (BRP),
-                that we have successfully digitalised for a classic RPG experience, complete with dice roles and character sheets etc.
+                <i>Mace & Magic</i> we aim to explore and expand the possibilities of this new
+                format not only in cutting edge programming but also in the recording and usage of
+                audio. <i>Mace & Magic</i> uses a slightly modified version of Choasium Inc’s RPG
+                rule set "Basic Roleplaying System" (BRP), that we have successfully digitalised for
+                a classic RPG experience, complete with dice roles and character sheets etc.
               </p>
             </div>
           </div>
@@ -95,7 +102,8 @@
         <div class="hero-text">
           <h2 class="inverted">Dare you enter the realm of Mace & Magic?</h2>
           <p class="inverted">
-            Download the free demo adventure now, and always be rembered as a bold pioneer of adventuring, hero of
+            Download the free demo adventure now, and always be rembered as a bold pioneer of
+            adventuring, hero of
             <i>Mace & Magic</i>!
           </p>
           <div>
@@ -106,13 +114,16 @@
         <img class="hero-image" src="../../assets/mace_background.jpg" />
       </div>
 
-        <div class="strip">
-          <h1>Sign up for the Newsletter</h1>
-          <p class="inverted">Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p>
-          <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb"/>
-        </div>
+      <div class="strip">
+        <h1>Sign up for the Newsletter</h1>
+        <p class="inverted">
+          Sign up for our newsletter and receive a new playable character for the demo adventure as
+          a free bonus.
+        </p>
+        <iframe src="https://cdn.forms-content.sg-form.com/ae43989a-a486-11ec-941c-ceafd6e237fb" />
+      </div>
 
-      <MainFooter/>
+      <MainFooter />
     </div>
   </main-layout>
 </template>
@@ -192,7 +203,8 @@ img {
   align-items: center;
   width: 100%;
 }
-.hero-text > p,h2 {
+.hero-text > p,
+h2 {
   max-width: 960px;
   padding-left: 30px;
   padding-right: 30px;

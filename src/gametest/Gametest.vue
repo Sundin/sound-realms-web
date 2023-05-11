@@ -41,7 +41,7 @@
           <a href="mailto:gustav@varghand.com">gustav@varghand.com</a>!
         </p>
 
-        <h1>Sign up for newsletter</h1>
+        <h1>Sign up for the Newsletter</h1>
         <div class="strip">
           <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
           <iframe
