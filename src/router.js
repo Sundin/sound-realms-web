@@ -18,6 +18,7 @@ import Newsletter from './newsletter/Newsletter.vue';
 import FortressOfDeath from './adventures/fortressofdeath/FortressOfDeath.vue';
 import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
 import NotFound from './pages/NotFound.vue';
+import Shop from './shop/Shop.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -39,6 +40,7 @@ const routes = [
   { path: '/fortressofdeath', component: FortressOfDeath, meta: { title: 'The Fortress of Death' } },
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
   { path: '/newsletter', component: Newsletter },
+  { path: '/shop', component: Shop },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
