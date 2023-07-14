@@ -83,19 +83,28 @@
   </main-layout>
 </template>
 
-<script>
-// import MyButton from '../components/MyButton.vue';
+<script >
+import { onMounted } from 'vue';
+
+import { openModal } from 'jenesius-vue-modal';
 import MainFooter from '../components/MainFooter.vue';
 import MainLayout from '../layouts/Main.vue';
 import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
 
+
+import KickstarterModal from './KickstarterModal.vue';
+
 export default {
   name: 'HomePage',
   components: {
-    // MyButton,
     MainFooter,
     MainLayout,
     NewsletterSignupForm,
+  },
+  setup() {
+    onMounted(() => {
+      openModal(KickstarterModal, {});
+    });
   },
 };
 </script>
