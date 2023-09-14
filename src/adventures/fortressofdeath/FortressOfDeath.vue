@@ -51,7 +51,7 @@
       <div class="kickstarter-strip">
         <div class="section-content inverted">
           <p>
-            Want to help us make <i>The Fortress of Death</i> into reality? Please sign up at our
+            Want to help us make <i>The Fortress of Death</i> into reality? Please join us at our
             <a
               href="https://www.kickstarter.com/projects/varghand/fortress-of-death"
               target="_blank"
@@ -62,7 +62,7 @@
           </p>
         </div>
         <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death" target="_blank">
-          <img src="../../assets/fod/fod_kickstarter.jpg" class="image" />
+          <img src="../../assets/fod/fod-now-live.jpg" class="image" />
         </a>
           <MyButton
             external="true"
