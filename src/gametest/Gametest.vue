@@ -43,20 +43,16 @@
           </a>
         </div>
 
-        <p>
-          <i>Please use quality headphones for a full, immersive 360 surround sound experience.</i>
-        </p>
-        <p><img src="../assets/gametest/headphones.png" class="image" /></p>
-        <p>
-          Stay alert for regular updates and please report any bugs to:
-          <a href="mailto:app@sound-realms.com">app@sound-realms.com</a>!
-        </p>
-
-        <h1>Sign up for the Newsletter</h1>
-        <div class="strip">
-          <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
-          <NewsletterSignupForm />
-        </div>
+        <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death" target="_blank">
+          <img src="../assets/fod/fod-now-live.jpg"  />
+        </a>
+          <MyButton
+            external="true"
+            class="button"
+            href="https://www.kickstarter.com/projects/varghand/fortress-of-death"
+          >
+            Join us on Kickstarter!
+          </MyButton>
       </div>
       <MainFooter />
     </div>
@@ -67,8 +63,8 @@
 import MainLayout from '../layouts/Main.vue';
 import MainFooter from '../components/MainFooter.vue';
 import TopMenu from '../components/TopMenu.vue';
-import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
 import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
+import MyButton from '../components/MyButton.vue';
 
 export default {
   name: 'GameTest',
@@ -76,8 +72,8 @@ export default {
     MainLayout,
     MainFooter,
     TopMenu,
-    NewsletterSignupForm,
     MyBreadcrumbs,
+    MyButton,
   },
 };
 </script>
@@ -110,7 +106,7 @@ export default {
 }
 .qr {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -122,5 +118,9 @@ export default {
 h1 {
   color: black;
   max-width: 100%;
+}
+
+.button {
+  margin: 30px;
 }
 </style>
