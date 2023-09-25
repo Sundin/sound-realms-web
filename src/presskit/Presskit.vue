@@ -28,6 +28,10 @@
           <h2>Press Releases</h2>
           <ul>
             <li class="bold">
+              September 23, 2023:
+              <a href="/press/fod-funded" class="bold">Kickstarter Fully Funded in Under 5 Hours!</a>
+            </li>
+            <li class="bold">
               September 15, 2023:
               <a href="/press/fod-kickstarter" class="bold">The Fortress of Death Kickstarter</a>
             </li>

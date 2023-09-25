@@ -6,6 +6,8 @@ The website of Sound Realms.
 
 Visit the page at [www.sound-realms.com](https://www.sound-realms.com).
 
+The live version runs on Node v. 16 – this is configurable on [Netlify](https://app.netlify.com/sites/sound-realms).
+
 Currently not compatible with prettier plugin.
 
 ## Project setup
