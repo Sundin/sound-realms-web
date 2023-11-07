@@ -1,7 +1,14 @@
 import { createApp } from 'vue';
 import VueGtag from 'vue-gtag-next';
+import { Amplify } from 'aws-amplify';
 import App from './App.vue';
 import router from './router';
+
+Amplify.configure({
+  aws_cognito_region: 'eu-north-1',
+  aws_user_pools_id: 'eu-north-1_wScBt5dG1',
+  aws_user_pools_web_client_id: '6rji8tci1r0u5mfdp8iemtvjmn',
+});
 
 createApp(App)
   .use(router)
