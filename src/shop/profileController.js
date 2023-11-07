@@ -1,3 +1,5 @@
+// Weird linter bug (https://stackoverflow.com/a/71793890)
+// eslint-disable-next-line import/no-unresolved
 import { Auth } from 'aws-amplify';
 
 const helpers = {

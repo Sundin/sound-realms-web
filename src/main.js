@@ -1,5 +1,7 @@
 import { createApp } from 'vue';
 import VueGtag from 'vue-gtag-next';
+// Weird linter bug (https://stackoverflow.com/a/71793890)
+// eslint-disable-next-line import/no-unresolved
 import { Amplify } from 'aws-amplify';
 import App from './App.vue';
 import router from './router';
