@@ -4,7 +4,12 @@
       <TopMenu />
       <div class="section-content">
         <h1>Web Shop</h1>
-        <LoginComponent/>
+        <div v-if="user===null">
+          <LoginComponent/>
+        </div>
+        <div v-else>
+          <p>Logged in as {{ user.username}}</p>
+        </div>
       </div>
       <MainFooter />
     </div>
@@ -37,6 +42,11 @@ export default {
       event.preventDefault();
 
       profileController.signIn(this.username, this.password);
+    },
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
     },
   },
 };
