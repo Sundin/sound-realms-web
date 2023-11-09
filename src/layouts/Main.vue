@@ -22,6 +22,13 @@ export default {
   font-style: normal;
   font-display: auto;
   unicode-range: U+000-5FF;
+  /*src: url("/fonts/HamletOrNot/HamletOrNot.eot"); /* IE9*/
+  src: url("fonts/HamletOrNot/HamletOrNot.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/HamletOrNot/HamletOrNot.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/HamletOrNot/HamletOrNot.woff") format("woff"), /* chrome、firefox */
+  url("fonts/HamletOrNot/HamletOrNot.ttf") format("truetype"),
+  url("fonts/HamletOrNot/HamletOrNot.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/HamletOrNot/HamletOrNot.svg#HamletOrNot") format("svg"); /* iOS 4.1- */
 
 }
 
