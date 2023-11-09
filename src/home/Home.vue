@@ -72,12 +72,12 @@
 
         <div class="section-content">
           <div class="row">
-            <div class="game_image_wrapper">
+            <div>
             <a href="/maceandmagic" class="dreadhorn_image">
               <img src="../assets/home/dreadhorn.png" alt="Mace & Magic" />
             </a>
           </div>
-          <div class="game_image_wrapper">
+          <div>
             <a href="/fortressofdeath" class="dreadhorn_image">
               <img src="../assets/home/fod-round-funded.png" alt="Lone Wolf: The Fortress of Death" />
             </a>

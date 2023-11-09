@@ -4,6 +4,7 @@
       <TopMenu />
       <div class="section-content">
         <h1>Web Shop</h1>
+        <ProductsList/>
         <div v-if="user===null">
           <LoginComponent/>
         </div>
@@ -22,6 +23,7 @@ import MainFooter from '../components/MainFooter.vue';
 import TopMenu from '../components/TopMenu.vue';
 import profileController from './profileController';
 import LoginComponent from './components/LoginComponent.vue';
+import ProductsList from './components/ProductsList.vue';
 
 export default {
   name: 'WebShop',
@@ -30,6 +32,7 @@ export default {
     MainFooter,
     TopMenu,
     LoginComponent,
+    ProductsList,
   },
   data() {
     return {
