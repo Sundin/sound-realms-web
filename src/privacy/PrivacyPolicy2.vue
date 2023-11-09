@@ -7,7 +7,6 @@
 
         <p>Last updated: July 25, 2022</p>
 
-
 <p>This privacy policy governs your use of the software application Sound Realms (“Application”) for mobile devices that was created by Varghand Publishing AB. The Application is a solo player RPG-style adventure game.</p>
 <h2>What information does the Application obtain and how is it used?</h2>
 <p><strong>User Provided Information</strong>&nbsp;</p>

@@ -115,7 +115,6 @@
             <a href="https://youtu.be/9waUrmOaVGM" target="_blank">https://youtu.be/9waUrmOaVGM</a>
           </p>
 
-
           <h2>Contact</h2>
           <p>
             Feel free to contact us at: <a href="mailto:dm@sound-realms.com">dm@sound-realms.com</a>

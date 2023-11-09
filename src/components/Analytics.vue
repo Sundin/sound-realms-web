@@ -7,7 +7,6 @@
 <script>
 /* eslint-disable max-len */
 
-
 function iOS() {
   return [
     'iPad Simulator',
@@ -35,7 +34,6 @@ const store = {
     });
   },
 };
-
 
 export default {
   name: 'Analytics',

@@ -1,4 +1,3 @@
-
 <template>
   <button @click="click" v-bind:class="{ invertedButton: inverted }">
     <slot></slot>

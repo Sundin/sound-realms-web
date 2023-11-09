@@ -42,7 +42,6 @@
 
       <YouTubeEmbed video="https://www.youtube.com/embed/9waUrmOaVGM" />
 
-
       <div class="strip">
         <h2>Sign up for the Newsletter</h2>
         <div class="section-content">
