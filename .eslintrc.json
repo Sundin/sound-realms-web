@@ -10,8 +10,5 @@
     ],
     "rules": {
         "max-len": "off"
-    },
-    "parserOptions": {
-        "parser": "babel-eslint"
     }
 }
