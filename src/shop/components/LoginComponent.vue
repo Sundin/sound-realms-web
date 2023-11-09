@@ -1,10 +1,10 @@
 <template>
   <main-layout>
     <div class="content">
-        <p>Please log in with your Sound Realms account to continue.</p>
-        <input v-model="username" placeholder="Username or email address">
-        <input v-model="password" placeholder="Password" type="password">
-        <button @click="click" v-bind:class="{ invertedButton: inverted }">Sign in</button>
+      <p>Please log in with your Sound Realms account to continue.</p>
+      <input v-model="username" placeholder="Username or email address" />
+      <input v-model="password" placeholder="Password" type="password" />
+      <button @click="click" v-bind:class="{ invertedButton: inverted }">Sign in</button>
     </div>
   </main-layout>
 </template>
@@ -14,8 +14,7 @@ import profileController from '../profileController';
 
 export default {
   name: 'LoginComponent',
-  components: {
-  },
+  components: {},
   data() {
     return {
       username: '',
@@ -23,10 +22,10 @@ export default {
     };
   },
   methods: {
-    click(event) {
+    async click(event) {
       event.preventDefault();
-
-      profileController.signIn(this.username, this.password);
+      const user = await profileController.signIn(this.username, this.password);
+      this.$store.commit('setUser', user);
     },
   },
 };
@@ -55,5 +54,4 @@ button {
   opacity: 0.8;
   transition: 0.3s;
 }
-
 </style>

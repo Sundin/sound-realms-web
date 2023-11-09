@@ -3,13 +3,14 @@
 import { Auth } from 'aws-amplify';
 
 const helpers = {
-  signIn(username, password) {
-    console.log('sign in');
+  async signIn(username, password) {
     try {
       const user = Auth.signIn(username, password);
       console.log(user);
+      return user;
     } catch (error) {
       console.log('error signing in', error);
+      return null;
     }
   },
 };

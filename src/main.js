@@ -3,6 +3,7 @@ import VueGtag from 'vue-gtag-next';
 // Weird linter bug (https://stackoverflow.com/a/71793890)
 // eslint-disable-next-line import/no-unresolved
 import { Amplify } from 'aws-amplify';
+import { createStore } from 'vuex';
 import App from './App.vue';
 import router from './router';
 
@@ -12,8 +13,22 @@ Amplify.configure({
   aws_user_pools_web_client_id: '6rji8tci1r0u5mfdp8iemtvjmn',
 });
 
+const store = createStore({
+  state() {
+    return {
+      user: null,
+    };
+  },
+  mutations: {
+    setUser(state, user) {
+      state.user = user;
+    },
+  },
+});
+
 createApp(App)
   .use(router)
+  .use(store)
   .use(VueGtag, {
     property: {
       id: 'G-J9XKGMD9SC',
