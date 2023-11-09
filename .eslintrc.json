@@ -1,5 +1,6 @@
 {
     "root": true,
+    "parser": "@babel/eslint-parser",
     "env": {
         "node": true
     },
@@ -12,6 +13,10 @@
         "max-len": "off"
     },
     "parserOptions": {
-        "parser": "babel-eslint"
+        "parser": "@babel/eslint-parser",
+        "sourceType": "module",
+        "babelOptions": {
+            "presets": ["@babel/preset-env"]
+          }
     }
 }
