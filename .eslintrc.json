@@ -5,13 +5,9 @@
     },
     "extends": [
         "plugin:vue/essential",
-        "eslint:recommended",
-        "@vue/airbnb"
+        "eslint:recommended"
     ],
     "rules": {
         "max-len": "off"
-    },
-    "parserOptions": {
-        "parser": "babel-eslint"
     }
 }
