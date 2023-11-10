@@ -103,6 +103,10 @@ section:nth-of-type(2n) {
   }
 }
 
+.bg {
+  overflow: hidden;
+}
+
 a {
   color: var(--link-color);
   font-family: Verdana, Arial, Helvetica, sans-serif;
