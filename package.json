@@ -22,17 +22,9 @@
     "eslint-plugin-vue": "9.18.1",
     "sass": "1.69.5"
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
-  "license": "GPL-3.0-or-later",
-  "overrides": {
-    "vue-template-compiler": "../_EXCLUDED_"
-  }
+  "license": "GPL-3.0-or-later"
 }
