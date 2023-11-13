@@ -1,6 +1,6 @@
 
 <template>
-  <button @click="click" v-bind:class="{ invertedButton: inverted }">
+  <button @click="buttonPressed" v-bind:class="{ invertedButton: inverted }">
     <slot></slot>
   </button>
 </template>
@@ -12,9 +12,13 @@ export default {
       type: Boolean,
       required: false,
     },
+    click: {
+      type: Function,
+      required: false,
+    },
     href: {
       type: String,
-      required: true,
+      required: false,
     },
     external: {
       type: Boolean,
@@ -22,8 +26,13 @@ export default {
     },
   },
   methods: {
-    click(event) {
+    buttonPressed(event) {
       event.preventDefault();
+
+      if (this.click) {
+        this.click();
+        return;
+      }
 
       if (this.external) {
         window.open(this.href, '_blank');

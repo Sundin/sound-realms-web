@@ -4,17 +4,20 @@
       <p>Please log in with your Sound Realms account to continue.</p>
       <input v-model="username" placeholder="Username or email address" />
       <input v-model="password" placeholder="Password" type="password" />
-      <button @click="click" v-bind:class="{ invertedButton: inverted }">Sign in</button>
+      <MyButton :click="click">Sign In</MyButton>
     </div>
   </main-layout>
 </template>
 
 <script>
 import profileController from '../profileController';
+import MyButton from '../../components/MyButton.vue';
 
 export default {
   name: 'LoginComponent',
-  components: {},
+  components: {
+    MyButton,
+  },
   data() {
     return {
       username: '',
@@ -22,8 +25,7 @@ export default {
     };
   },
   methods: {
-    async click(event) {
-      event.preventDefault();
+    async click() {
       const user = await profileController.signIn(this.username, this.password);
       this.$store.commit('setUser', user);
     },
@@ -37,21 +39,5 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-button {
-  background-color: #a166a0;
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px;
-  padding: 10px 25px;
-  margin: 0px 15px;
-  font-family: HamletOrNot, Verdana, Georgia, serif;
-  cursor: pointer;
-  outline: none;
-  opacity: 0.8;
-  transition: 0.3s;
 }
 </style>
