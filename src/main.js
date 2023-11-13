@@ -17,12 +17,17 @@ const store = createStore({
   state() {
     return {
       user: null,
+      shoppingCart: [],
     };
   },
   mutations: {
     setUser(state, user) {
       state.user = user;
     },
+    addToCart(state, product) {
+      state.shoppingCart.push(product);
+      this.$store.commit('addToCart', product);
+    }
   },
 });
 

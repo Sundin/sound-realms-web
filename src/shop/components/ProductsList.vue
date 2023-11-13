@@ -8,7 +8,7 @@
           </a>
           <h3>{{product.title}}</h3>
           <p>PRE-ORDER</p>
-          <MyButton href="/download">Add To Cart</MyButton>
+          <MyButton :click="() => addToCart(product)">Add To Cart</MyButton>
         </div>
       </div>
     </div>
@@ -34,6 +34,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    addToCart(product) {
+      console.log(product.title);
+    },
   },
 };
 </script>
