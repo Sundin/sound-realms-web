@@ -3,9 +3,11 @@
     <div class="content">
       <div class="row">
         <div v-for="(product) in products" :key="product.title">
-          <a href="/maceandmagic" class="dreadhorn_image">
-            <img :src="getImageUrl(product.image)" :alt="product.title" />
+          <a href="/maceandmagic" class="product_image">
+            <img :src="product.image" :alt="product.title" />
           </a>
+          <h3>{{product.title}}</h3>
+          <p>PRE-ORDER</p>
         </div>
       </div>
     </div>
@@ -22,18 +24,13 @@ export default {
     return {
       products: [
         {
-          image: 'home/fod-round-funded.png',
+          image: '/src/assets/fod/fod-funded.jpg',
           title: 'Lone Wolf: The Fortress of Death',
           price: 100,
           description: 'Pre-Order',
         },
       ],
     };
-  },
-  methods: {
-    getImageUrl(path) {
-      return new URL(`../assets/${path}`, import.meta.url).href;
-    },
   },
 };
 </script>
@@ -72,7 +69,7 @@ button {
 .text {
   align-items: flex-start;
 }
-.dreadhorn_image {
+.product_image {
   max-width: 40%;
   padding-bottom: 30px;
   padding-right: 30px;
