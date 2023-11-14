@@ -1,15 +1,14 @@
 <template>
   <main-layout>
     <div class="content">
-      <div class="row">
+      <div class="grid-container">
         <div v-for="(product) in products" :key="product.title">
-          <a href="/maceandmagic" class="product_image">
-            <img :src="product.image" :alt="product.title" />
-          </a>
-          <h3>{{product.title}}</h3>
-          <p>PRE-ORDER</p>
+          <img :src="product.image" :alt="product.title" />
+          <p>{{product.title}} (Pre-Order)</p>
+          <p class="center-me">{{product.price}} SEK</p>
           <MyButton :click="() => addToCart(product)">Add To Cart</MyButton>
         </div>
+        <div></div>
       </div>
     </div>
   </main-layout>
@@ -26,6 +25,12 @@ export default {
   data() {
     return {
       products: [
+        {
+          image: '/src/assets/fod/fod-funded.jpg',
+          title: 'Lone Wolf: The Fortress of Death',
+          price: 150,
+          description: 'Pre-Order',
+        },
         {
           image: '/src/assets/fod/fod-funded.jpg',
           title: 'Lone Wolf: The Fortress of Death',
@@ -51,15 +56,17 @@ export default {
   align-items: center;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 960px;
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .text {
   align-items: flex-start;
+}
+.center-me {
+  margin: auto;
 }
 .product_image {
   max-width: 40%;
