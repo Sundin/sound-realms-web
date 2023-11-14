@@ -2,6 +2,7 @@
   <main-layout>
     <div class="content">
       <p>Please log in with your Sound Realms account to continue.</p>
+      <p>This is the same account as you use in the Sound Realms app.</p>
       <input v-model="username" placeholder="Username or email address" />
       <input v-model="password" placeholder="Password" type="password" />
       <MyButton :click="click">Sign In</MyButton>
@@ -39,5 +40,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+input {
+  min-width: 300px;
+  min-height: 25px;
+  margin: 10px;
+}
+button {
+  margin: 30px;
 }
 </style>
