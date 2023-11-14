@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     addToCart(product) {
-      console.log(product.title);
+      this.$store.commit('addToCart', product);
     },
   },
 };

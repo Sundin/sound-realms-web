@@ -5,12 +5,15 @@
       <div class="section-content">
         <h1>Web Shop</h1>
         <ProductsList/>
-        <div v-if="user===null">
+        <div v-if="shoppingCart.length > 0">
+          <MyButton href="/cart" class="checkout-button">Continue to Checkout</MyButton>
+        </div>
+        <!-- <div v-if="user===null">
           <LoginComponent/>
         </div>
         <div v-else>
           <p>Logged in as {{ user.username}}</p>
-        </div>
+        </div> -->
       </div>
       <MainFooter />
     </div>
@@ -24,6 +27,7 @@ import TopMenu from '../components/TopMenu.vue';
 import profileController from './profileController';
 import LoginComponent from './components/LoginComponent.vue';
 import ProductsList from './components/ProductsList.vue';
+import MyButton from '../components/MyButton.vue';
 
 export default {
   name: 'WebShop',
@@ -33,6 +37,7 @@ export default {
     TopMenu,
     LoginComponent,
     ProductsList,
+    MyButton,
   },
   data() {
     return {
@@ -40,16 +45,12 @@ export default {
       password: '',
     };
   },
-  methods: {
-    click(event) {
-      event.preventDefault();
-
-      profileController.signIn(this.username, this.password);
-    },
-  },
   computed: {
     user() {
       return this.$store.state.user;
+    },
+    shoppingCart() {
+      return this.$store.state.shoppingCart;
     },
   },
 };
@@ -74,6 +75,10 @@ export default {
 h1 {
   color: black;
   max-width: 100%;
+}
+
+.checkout-button {
+  margin: 50px;
 }
 
 </style>

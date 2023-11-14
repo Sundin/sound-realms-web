@@ -26,7 +26,6 @@ const store = createStore({
     },
     addToCart(state, product) {
       state.shoppingCart.push(product);
-      this.$store.commit('addToCart', product);
     }
   },
 });
