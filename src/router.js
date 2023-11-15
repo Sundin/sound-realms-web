@@ -20,6 +20,7 @@ import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
 import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
 import Cart from './shop/Cart.vue';
+import Checkout from './shop/Checkout.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -43,6 +44,7 @@ const routes = [
   { path: '/newsletter', component: Newsletter },
   { path: '/shop', component: Shop },
   { path: '/cart', component: Cart },
+  { path: '/checkout', component: Checkout },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
