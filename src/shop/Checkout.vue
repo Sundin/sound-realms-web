@@ -4,15 +4,15 @@
       <TopMenu />
       <div class="section-content">
         <h1>Shopping Cart</h1>
-        <div v-if="user===null">
-          <LoginComponent/>
+        <div v-if="user === null">
+          <LoginComponent />
         </div>
         <div v-else>
-          <div v-for="(product) in shoppingCart" :key="product.title">
-            <p>{{product.title}}, {{product.price}} SEK</p>
+          <div v-for="product in shoppingCart" :key="product.title">
+            <p>{{ product.title }}, {{ product.price }} SEK</p>
           </div>
-          <p>Total Price: {{totalPrice}} SEK</p>
-          <p>(Logged in as {{ user.username}})</p>
+          <p>Total Price: {{ totalPrice }} SEK</p>
+          <p>(Logged in as {{ user.username }})</p>
           <MyButton :click="checkout" class="checkout-button">Checkout</MyButton>
         </div>
       </div>
@@ -22,17 +22,17 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
-import profileController from './profileController';
-import LoginComponent from './components/LoginComponent.vue';
-import ProductsList from './components/ProductsList.vue';
-import MyButton from '../components/MyButton.vue';
-import { StripeCheckout } from '@vue-stripe/vue-stripe';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import TopMenu from "../components/TopMenu.vue";
+import profileController from "./profileController";
+import LoginComponent from "./components/LoginComponent.vue";
+import ProductsList from "./components/ProductsList.vue";
+import MyButton from "../components/MyButton.vue";
+import { StripeCheckout } from "@vue-stripe/vue-stripe";
 
 export default {
-  name: 'WebShop',
+  name: "WebShop",
   components: {
     MainLayout,
     MainFooter,
@@ -44,8 +44,8 @@ export default {
   },
   data() {
     return {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
     };
   },
   computed: {
@@ -61,10 +61,14 @@ export default {
   },
   methods: {
     async checkout() {
-
-    fetch('https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session', {method: 'POST'})
-    .then(response => response.json())
-    .then(data => product.value = data);
+      const response = await fetch("https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session", {
+        method: "POST",
+      });
+      const jsonBody = await response.json();
+      const redirectUri = jsonBody.redirect_url;
+      console.log(redirectUri);
+      window.location.href = redirectUri;
+      //router.push({ path: redirectUri })
     },
   },
 };
@@ -94,5 +98,4 @@ h1 {
 .checkout-button {
   margin: 50px;
 }
-
 </style>
