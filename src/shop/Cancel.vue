@@ -3,18 +3,7 @@
     <div class="content">
       <TopMenu />
       <div class="section-content">
-        <h1>Shopping Cart</h1>
-        <div v-if="user===null">
-          <LoginComponent/>
-        </div>
-        <div v-else>
-          <div v-for="(product) in shoppingCart" :key="product.title">
-            <p>{{product.title}}, {{product.price}} SEK</p>
-          </div>
-          <p>Total Price: {{totalPrice}} SEK</p>
-          <p>(Logged in as {{ user.username}})</p>
-          <MyButton :click="checkout" class="checkout-button">Checkout</MyButton>
-        </div>
+        <h1>Purchase Cancelled</h1>
       </div>
       <MainFooter />
     </div>
@@ -26,10 +15,7 @@ import MainLayout from '../layouts/Main.vue';
 import MainFooter from '../components/MainFooter.vue';
 import TopMenu from '../components/TopMenu.vue';
 import profileController from './profileController';
-import LoginComponent from './components/LoginComponent.vue';
-import ProductsList from './components/ProductsList.vue';
 import MyButton from '../components/MyButton.vue';
-import { StripeCheckout } from '@vue-stripe/vue-stripe';
 
 export default {
   name: 'WebShop',
@@ -37,10 +23,7 @@ export default {
     MainLayout,
     MainFooter,
     TopMenu,
-    LoginComponent,
-    ProductsList,
     MyButton,
-    StripeCheckout,
   },
   data() {
     return {
@@ -54,17 +37,6 @@ export default {
     },
     shoppingCart() {
       return this.$store.state.shoppingCart;
-    },
-    totalPrice() {
-      return this.$store.state.shoppingCart.reduce((partialSum, a) => partialSum + a.price, 0);
-    },
-  },
-  methods: {
-    async checkout() {
-
-    fetch('https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session', {method: 'POST'})
-    .then(response => response.json())
-    .then(data => product.value = data);
     },
   },
 };

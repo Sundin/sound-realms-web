@@ -21,6 +21,8 @@ import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
 import Cart from './shop/Cart.vue';
 import Checkout from './shop/Checkout.vue';
+import Success from './shop/Success.vue';
+import Cancel from './shop/Cancel.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -45,6 +47,8 @@ const routes = [
   { path: '/shop', component: Shop },
   { path: '/cart', component: Cart },
   { path: '/checkout', component: Checkout },
+  { path: '/shop/success', component: Success },
+  { path: '/shop/cancel', component: Cancel },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
