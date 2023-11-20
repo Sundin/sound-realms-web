@@ -10,7 +10,7 @@ const helpers = {
       return user;
     } catch (error) {
       console.log('error signing in', error);
-      return null;
+      throw error;
     }
   },
 };

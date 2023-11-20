@@ -5,7 +5,10 @@
       <p>This is the same account as you use in the Sound Realms app.</p>
       <input v-model="username" placeholder="Username or email address" />
       <input v-model="password" placeholder="Password" type="password" @keyup.enter="login()"  />
-      <MyButton :click="login">Sign In</MyButton>
+      <div v-if="error">
+        <p class="error-text">{{error}}</p>
+      </div>
+      <MyButton :click="login" :disabled="loading">Sign In</MyButton>
     </div>
   </main-layout>
 </template>
@@ -23,12 +26,22 @@ export default {
     return {
       username: '',
       password: '',
+      loading: false,
+      error: null,
     };
   },
   methods: {
     async login() {
-      const user = await profileController.signIn(this.username, this.password);
-      this.$store.commit('setUser', user);
+      this.error = null;
+      this.loading = true;
+      try {
+        const user = await profileController.signIn(this.username, this.password);
+        this.$store.commit('setUser', user);
+        this.loading = false;
+      } catch (error) {
+        this.error = error;
+        this.loading = false;
+      }
     },
   },
 };
@@ -48,5 +61,8 @@ input {
 }
 button {
   margin: 30px;
+}
+.error-text {
+  color: #aa0000;
 }
 </style>
