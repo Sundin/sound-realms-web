@@ -8,7 +8,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "4.4.1",
+    "@vitejs/plugin-vue": "4.5.0",
     "axios": "1.6.1",
     "core-js": "3.32.2",
     "vite": "4.5.0",
