@@ -13,7 +13,7 @@
           </div>
           <p>Total Price: {{ totalPrice }} SEK</p>
           <p>(Logged in as {{ user.username }})</p>
-          <MyButton :click="checkout" class="checkout-button">Checkout</MyButton>
+          <MyButton :click="checkout" class="checkout-button" :disabled="loading">Checkout</MyButton>
         </div>
       </div>
       <MainFooter />
@@ -46,6 +46,7 @@ export default {
     return {
       username: "",
       password: "",
+      loading: false,
     };
   },
   computed: {
@@ -61,6 +62,7 @@ export default {
   },
   methods: {
     async checkout() {
+      this.loading = true;
       const response = await fetch("https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session", {
         method: "POST",
       });
@@ -68,7 +70,6 @@ export default {
       const redirectUri = jsonBody.redirect_url;
       console.log(redirectUri);
       window.location.href = redirectUri;
-      //router.push({ path: redirectUri })
     },
   },
 };
