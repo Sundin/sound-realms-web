@@ -103,16 +103,15 @@ export default {
       this.error = null;
       this.loading = true;
       try {
-        const user = await profileController.confirmSignUp({
+        await profileController.confirmSignUp({
           username: this.username,
           confirmationCode: this.confirmationCode,
         });
-        await profileController.handleAutoSignIn();
+        const user = await profileController.signIn(this.username, this.password);
+        this.$store.commit('setUser', user);
         this.loading = false;
         this.error = null;
-        // if (user !== null) {
-        //   this.step = "CONFIRM";
-        // }
+        this.$router.push('/shop/cart');
       } catch (error) {
         this.error = error;
         this.loading = false;

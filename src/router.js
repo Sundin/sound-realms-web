@@ -46,7 +46,7 @@ const routes = [
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
   { path: '/newsletter', component: Newsletter },
   { path: '/shop', component: Shop },
-  { path: '/cart', component: Cart },
+  { path: '/shop/cart', component: Cart },
   { path: '/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },

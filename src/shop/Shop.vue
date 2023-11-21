@@ -6,14 +6,8 @@
         <h1>Web Shop</h1>
         <ProductsList/>
         <div v-if="shoppingCart.length > 0">
-          <MyButton href="/cart" class="checkout-button">Continue to Checkout</MyButton>
+          <MyButton href="/shop/cart" class="checkout-button">Continue to Checkout</MyButton>
         </div>
-        <!-- <div v-if="user===null">
-          <LoginComponent/>
-        </div>
-        <div v-else>
-          <p>Logged in as {{ user.username}}</p>
-        </div> -->
       </div>
       <MainFooter />
     </div>

@@ -1,12 +1,14 @@
 // Weird linter bug (https://stackoverflow.com/a/71793890)
 // eslint-disable-next-line import/no-unresolved
 //import { Auth } from 'aws-amplify';
-import { signUp, confirmSignUp, autoSignIn } from '@aws-amplify/auth';
+import { getCurrentUser, signIn, signUp, confirmSignUp, autoSignIn, signOut } from '@aws-amplify/auth';
 
 const helpers = {
   async signIn(username, password) {
     try {
-      const user = Auth.signIn(username, password);
+      await this.handleSignOut();
+      await signIn({username, password});
+      const user = await getCurrentUser();
       console.log(user);
       return user;
     } catch (error) {
@@ -48,12 +50,20 @@ const helpers = {
   },
   async handleAutoSignIn() {
     try {
+      await this.handleSignOut();
       const signInOutput = await autoSignIn();
       console.log("AUTO SIGN IN");
       console.log(signInOutput);
       // handle sign-in steps
     } catch (error) {
       console.log(error);
+    }
+  },
+  async handleSignOut() {
+    try {
+      await signOut();
+    } catch (error) {
+      console.log('error signing out: ', error);
     }
   },
 };
