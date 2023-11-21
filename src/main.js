@@ -39,6 +39,9 @@ const store = createStore({
     },
     addToCart(state, product) {
       state.shoppingCart.push(product);
+      state.shoppingCart = state.shoppingCart.filter((value, index, array) => {
+        return array.indexOf(value) === index;
+      });
     },
     removeFromCart(state, product) {
       state.shoppingCart = state.shoppingCart.filter(function(el) {
