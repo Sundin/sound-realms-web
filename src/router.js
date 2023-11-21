@@ -23,6 +23,7 @@ import Cart from './shop/Cart.vue';
 import Checkout from './shop/Checkout.vue';
 import Success from './shop/Success.vue';
 import Cancel from './shop/Cancel.vue';
+import CreateAccount from './shop/CreateAccount.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -49,6 +50,7 @@ const routes = [
   { path: '/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },
+  { path: '/shop/create-account', component: CreateAccount },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 

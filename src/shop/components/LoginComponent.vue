@@ -9,6 +9,9 @@
         <p class="error-text">{{error}}</p>
       </div>
       <MyButton :click="login" :disabled="loading">Sign In</MyButton>
+      <hr/>
+      <MyButton href="/shop/forgot-password" :disabled="loading">Forgot Password</MyButton>
+      <MyButton href="/shop/create-account" :disabled="loading">Create Account</MyButton>
     </div>
   </main-layout>
 </template>
@@ -43,6 +46,12 @@ export default {
         this.loading = false;
       }
     },
+    async forgotPassword() {
+
+    },
+    async createAccount() {
+
+    },
   },
 };
 </script>
@@ -60,7 +69,7 @@ input {
   margin: 10px;
 }
 button {
-  margin: 30px;
+  margin: 10px;
 }
 .error-text {
   color: #aa0000;
