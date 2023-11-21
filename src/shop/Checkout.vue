@@ -35,9 +35,7 @@ import MainFooter from "../components/MainFooter.vue";
 import TopMenu from "../components/TopMenu.vue";
 import profileController from "./profileController";
 import LoginComponent from "./components/LoginComponent.vue";
-import ProductsList from "./components/ProductsList.vue";
 import MyButton from "../components/MyButton.vue";
-import { StripeCheckout } from "@vue-stripe/vue-stripe";
 
 export default {
   name: "WebShop",
@@ -46,12 +44,9 @@ export default {
     MainFooter,
     TopMenu,
     LoginComponent,
-    ProductsList,
     MyButton,
-    StripeCheckout,
   },
   mounted() {
-    console.log(`the component is now mounted.`);
     profileController.getCurrentUser().then((user) => this.$store.commit("setUser", user));
   },
   data() {
@@ -82,11 +77,15 @@ export default {
         "https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session",
         {
           method: "POST",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({products: this.shoppingCart}),
         }
       );
       const jsonBody = await response.json();
       const redirectUri = jsonBody.redirect_url;
-      console.log(redirectUri);
       window.location.href = redirectUri;
     },
     removeFromCart(product) {

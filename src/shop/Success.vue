@@ -4,6 +4,8 @@
       <TopMenu />
       <div class="section-content">
         <h1>Thank You!</h1>
+        <p>Stay tuned for updates, and thanks for supporting Sound Realms!</p>
+        <MyButton href="/">Return Home</MyButton>
       </div>
       <MainFooter />
     </div>
@@ -11,14 +13,13 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
-import profileController from './profileController';
-import MyButton from '../components/MyButton.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import TopMenu from "../components/TopMenu.vue";
+import MyButton from "../components/MyButton.vue";
 
 export default {
-  name: 'WebShop',
+  name: "WebShop",
   components: {
     MainLayout,
     MainFooter,
@@ -27,8 +28,8 @@ export default {
   },
   data() {
     return {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
     };
   },
   computed: {
@@ -63,8 +64,9 @@ h1 {
   max-width: 100%;
 }
 
-.checkout-button {
-  margin: 50px;
+button {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 </style>
