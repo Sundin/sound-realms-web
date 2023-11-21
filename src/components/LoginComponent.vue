@@ -10,8 +10,8 @@
       </div>
       <MyButton :click="login" :disabled="loading">Sign In</MyButton>
       <hr/>
-      <MyButton href="/shop/forgot-password" :disabled="loading">Forgot Password</MyButton>
-      <MyButton href="/shop/create-account" :disabled="loading">Create Account</MyButton>
+      <MyButton href="/account/forgot-password" :disabled="loading">Forgot Password</MyButton>
+      <MyButton href="/account/create-account" :disabled="loading">Create Account</MyButton>
     </div>
   </main-layout>
 </template>

@@ -25,6 +25,7 @@ import Cancel from './shop/Cancel.vue';
 import CreateAccount from './shop/CreateAccount.vue';
 import AllGames from './adventures/AllGames.vue';
 import AccountPage from './account/AccountPage.vue';
+import ForgotPassword from './account/ForgotPassword.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -48,11 +49,12 @@ const routes = [
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
   { path: '/newsletter', component: Newsletter },
   { path: '/account', component: AccountPage },
+  { path: '/account/create-account', component: CreateAccount },
+  { path: '/account/forgot-password', component: ForgotPassword },
   { path: '/shop', component: Shop },
   { path: '/shop/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },
-  { path: '/shop/create-account', component: CreateAccount },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
