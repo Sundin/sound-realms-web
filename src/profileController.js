@@ -12,7 +12,10 @@ const helpers = {
   async signIn(username, password) {
     try {
       await this.handleSignOut();
-      await signIn({ username, password });
+      await signIn({
+        username: username.trim(),
+        password: password.trim(),
+      });
       const user = await getCurrentUser();
       console.log(user);
       return user;
@@ -29,9 +32,9 @@ const helpers = {
   async handleSignUp({ username, password, email }) {
     try {
       const signupResult = await signUp({
-        username,
-        password,
-        attributes: { email },
+        username: username.trim(),
+        password: password.trim(),
+        attributes: { email: email.trim() },
         options: {
           userAttributes: {
             email,
@@ -49,8 +52,8 @@ const helpers = {
   async confirmSignUp({ username, confirmationCode }) {
     try {
       const result = await confirmSignUp({
-        username,
-        confirmationCode,
+        username: username.trim(),
+        confirmationCode: confirmationCode.trim(),
       });
       console.log(result);
     } catch (error) {
@@ -67,7 +70,7 @@ const helpers = {
   },
   async sendPasswordResetCode(username) {
     try {
-      await resetPassword({ username });
+      await resetPassword({ username: username.trim() });
     } catch (error) {
       console.log(error);
       throw error;
@@ -79,7 +82,11 @@ const helpers = {
     newPassword,
   }) {
     try {
-      await confirmResetPassword({ username, confirmationCode, newPassword });
+      await confirmResetPassword({
+        username: username.trim(),
+        confirmationCode: confirmationCode.trim(),
+        newPassword: newPassword.trim(),
+      });
     } catch (error) {
       console.log(error);
       throw error;

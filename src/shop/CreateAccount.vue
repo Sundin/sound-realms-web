@@ -106,8 +106,15 @@ export default {
         this.error = null;
         this.$router.push('/shop/checkout');
       } catch (error) {
-        this.error = error;
         this.loading = false;
+        if (error.includes("Member must satisfy regular expression pattern") && error.includes("username")) {
+          this.error = "Username contains invalid characters (such as spaces)";
+          return;
+        } else if (error.includes("Member must satisfy regular expression pattern") && error.includes("password")) {
+          this.error = "Password contains invalid characters (such as spaces)";
+          return;
+        }
+        this.error = error;
       }
     }
   },
