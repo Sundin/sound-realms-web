@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <TopMenu2/>
     <div id="app">
       <!-- <Header /> -->
       <!-- <Analytics /> -->
@@ -11,8 +12,12 @@
 </template>
 
 <script>
+import TopMenu2 from '../components/TopMenu2.vue';
 export default {
   name: 'app',
+  components: {
+    TopMenu2,
+  },
 };
 </script>
 <style>

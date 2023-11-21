@@ -1,6 +1,5 @@
 <template>
   <div class="strip-wrapper">
-    <a href="/" class="logo-link"><img src="../assets/sr_logo_colour.png" class="logo"/></a>
   </div>
 </template>
 

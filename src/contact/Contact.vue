@@ -1,19 +1,19 @@
 <template>
   <main-layout>
     <div class="content">
-      <TopMenu/>
-      <MyBreadcrumbs
-            :breadcrumbs="[
-              {
-                title: 'Sound Realms',
-                link: '/'
-              },
-              {
-                title: 'Contact'
-              }
-            ]"
-          />
+      <TopMenu />
       <section>
+        <MyBreadcrumbs
+          :breadcrumbs="[
+            {
+              title: 'Sound Realms',
+              link: '/',
+            },
+            {
+              title: 'Contact',
+            },
+          ]"
+        />
         <div class="section-content">
           <h1>Get in touch with the Dungeon Master</h1>
           <p>
@@ -25,26 +25,27 @@
             <a href="mailto:dm@sound-realms.com">dm@sound-realms.com</a>.
           </p>
           <p>
-            You can also join our <a href="https://discord.gg/Zwa3FuFK79" target="_blank">official Discord channel</a>.
+            You can also join our
+            <a href="https://discord.gg/Zwa3FuFK79" target="_blank">official Discord channel</a>.
           </p>
           <p>All thoughts, ideas, feedback and bug reports are very welcome!</p>
         </div>
       </section>
-      <GametestStrip/>
+      <GametestStrip />
       <MainFooter />
     </div>
   </main-layout>
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import GametestStrip from '../components/GametestStrip.vue';
-import TopMenu from '../components/TopMenu.vue';
-import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import GametestStrip from "../components/GametestStrip.vue";
+import TopMenu from "../components/TopMenu.vue";
+import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
 
 export default {
-  name: 'ContactPage',
+  name: "ContactPage",
   components: {
     MainLayout,
     MainFooter,
@@ -71,5 +72,4 @@ section {
   height: auto;
   object-fit: scale-down;
 }
-
 </style>

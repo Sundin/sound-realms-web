@@ -2,18 +2,18 @@
   <main-layout>
     <div class="content">
       <TopMenu />
-      <MyBreadcrumbs
-        :breadcrumbs="[
-          {
-            title: 'Sound Realms',
-            link: '/'
-          },
-          {
-            title: 'Newsletter'
-          }
-        ]"
-      />
       <section>
+        <MyBreadcrumbs
+          :breadcrumbs="[
+            {
+              title: 'Sound Realms',
+              link: '/',
+            },
+            {
+              title: 'Newsletter',
+            },
+          ]"
+        />
         <div class="section-content">
           <h1>Sign up for the Newsletter</h1>
           <!-- <p>Sign up for our newsletter and receive a new playable character for the demo adventure as a free bonus.</p> -->
@@ -27,14 +27,14 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
-import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
-import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import TopMenu from "../components/TopMenu.vue";
+import NewsletterSignupForm from "../components/NewsletterSignupForm.vue";
+import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
 
 export default {
-  name: 'NewsletterPage',
+  name: "NewsletterPage",
   components: {
     MainLayout,
     MainFooter,

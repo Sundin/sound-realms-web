@@ -1,7 +1,6 @@
 <template>
   <main-layout>
     <div class="content">
-      <TopMenu />
       <div class="section-content">
         <h1>Web Shop</h1>
         <ProductsList/>
@@ -17,7 +16,6 @@
 <script>
 import MainLayout from '../layouts/Main.vue';
 import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
 import ProductsList from './components/ProductsList.vue';
 import MyButton from '../components/MyButton.vue';
 
@@ -26,7 +24,6 @@ export default {
   components: {
     MainLayout,
     MainFooter,
-    TopMenu,
     ProductsList,
     MyButton,
   },

@@ -2,18 +2,18 @@
   <main-layout>
     <div class="content">
       <TopMenu />
-      <MyBreadcrumbs
-            :breadcrumbs="[
-              {
-                title: 'Sound Realms',
-                link: '/'
-              },
-              {
-                title: 'About Us'
-              },
-            ]"
-          />
       <section>
+        <MyBreadcrumbs
+          :breadcrumbs="[
+            {
+              title: 'Sound Realms',
+              link: '/',
+            },
+            {
+              title: 'About Us',
+            },
+          ]"
+        />
         <div class="section-content">
           <h1>The story so far</h1>
           <p>
@@ -81,22 +81,21 @@
         </div>
       </div>
 
-
       <MainFooter />
     </div>
   </main-layout>
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import GametestStrip from '../components/GametestStrip.vue';
-import TopMenu from '../components/TopMenu.vue';
-import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
-import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import GametestStrip from "../components/GametestStrip.vue";
+import TopMenu from "../components/TopMenu.vue";
+import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
+import NewsletterSignupForm from "../components/NewsletterSignupForm.vue";
 
 export default {
-  name: 'LearnMorePage',
+  name: "LearnMorePage",
   components: {
     MainLayout,
     MainFooter,

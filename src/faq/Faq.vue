@@ -2,18 +2,19 @@
   <main-layout>
     <div class="content">
       <TopMenu />
-      <MyBreadcrumbs
-        :breadcrumbs="[
-          {
-            title: 'Sound Realms',
-            link: '/'
-          },
-          {
-            title: 'FAQ'
-          }
-        ]"
-      />
+
       <section>
+        <MyBreadcrumbs
+          :breadcrumbs="[
+            {
+              title: 'Sound Realms',
+              link: '/',
+            },
+            {
+              title: 'FAQ',
+            },
+          ]"
+        />
         <div class="section-content">
           <h1>What is Sound Realms?</h1>
 
@@ -35,8 +36,8 @@
 
           <h1>What is Mace & Magic?</h1>
           <p>
-            Mace & Magic is one of Sound Realms’ own series of RPG audio solo adventures. The genre is
-            dark fantasy and is set in the “Forsaken Lands of Mihr”, a medieval, more or less
+            Mace & Magic is one of Sound Realms’ own series of RPG audio solo adventures. The genre
+            is dark fantasy and is set in the “Forsaken Lands of Mihr”, a medieval, more or less
             traditional fantasy world that has been struck by “the Magiklysm”. The Magiklysm was an
             apocalyptic event caused by a war between two guilds of rival sorcerers that has
             completely transformed the world of Mihr into a treacherous and chaotic realm. The
@@ -85,15 +86,15 @@
           <h1>Who are you?</h1>
 
           <p>
-            Sound Realms is crafted by the Swedish games publisher Varghand Publishing AB. The company
-            is being led by Oscar Carlquist and Gustav Sundin, two heavy metal-loving, old school
-            RPG fanatics. Learn more about us as well as Sound Realms' history and future to come
+            Sound Realms is crafted by the Swedish games publisher Varghand Publishing AB. The
+            company is being led by Oscar Carlquist and Gustav Sundin, two heavy metal-loving, old
+            school RPG fanatics. Learn more about us as well as Sound Realms' history and future to
+            come
             <a href="/learn-more">here</a>.
           </p>
 
           <img src="../assets/skelett_sam.png" class="image-medium" />
         </div>
-
       </section>
       <div class="strip">
         <h2>Sign up for the Newsletter</h2>
@@ -113,15 +114,15 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import GametestStrip from '../components/GametestStrip.vue';
-import TopMenu from '../components/TopMenu.vue';
-import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
-import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import GametestStrip from "../components/GametestStrip.vue";
+import TopMenu from "../components/TopMenu.vue";
+import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
+import NewsletterSignupForm from "../components/NewsletterSignupForm.vue";
 
 export default {
-  name: 'FaqPage',
+  name: "FaqPage",
   components: {
     MainLayout,
     MainFooter,
