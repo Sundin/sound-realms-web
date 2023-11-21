@@ -3,7 +3,7 @@
     <div class="content">
       <div class="grid-container">
         <div v-for="(product) in products" :key="product.title">
-          <img :src="product.image" :alt="product.title" />
+          <img :src="getImageUrl(product)" :alt="product.title" />
           <p>{{product.title}} (Pre-Order)</p>
           <p class="center-me">{{product.price}} SEK</p>
           <MyButton :click="() => addToCart(product)">Add To Cart</MyButton>
@@ -46,6 +46,9 @@ export default {
     addToCart(product) {
       this.$store.commit('addToCart', product);
     },
+    getImageUrl(product) {
+      return new URL(product['image'], import.meta.url);
+    }
   },
 };
 </script>
