@@ -1,7 +1,7 @@
 // Weird linter bug (https://stackoverflow.com/a/71793890)
 // eslint-disable-next-line import/no-unresolved
-import { Auth } from 'aws-amplify';
-//import { signUp } from '@aws-amplify/auth';
+//import { Auth } from 'aws-amplify';
+import { signUp, confirmSignUp, autoSignIn } from '@aws-amplify/auth';
 
 const helpers = {
   async signIn(username, password) {
@@ -16,7 +16,7 @@ const helpers = {
   },
   async handleSignUp({ username, password, email }) {
     try {
-      const signupResult = await Auth.signUp({
+      const signupResult = await signUp({
         username,
         password,
         attributes: { email },
@@ -36,10 +36,10 @@ const helpers = {
   },
   async confirmSignUp({username, confirmationCode}) {
     try {
-      const result = await Auth.confirmSignUp(
+      const result = await confirmSignUp({
         username,
         confirmationCode,
-      );
+    });
       console.log(result);
     } catch (error) {
       console.log('error confirming sign up', error);
@@ -48,7 +48,7 @@ const helpers = {
   },
   async handleAutoSignIn() {
     try {
-      const signInOutput = await Auth.autoSignIn();
+      const signInOutput = await autoSignIn();
       console.log("AUTO SIGN IN");
       console.log(signInOutput);
       // handle sign-in steps
