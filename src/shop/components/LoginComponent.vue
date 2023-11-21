@@ -3,7 +3,7 @@
     <div class="content">
       <p>Please log in with your Sound Realms account to continue.</p>
       <p>This is the same account as you use in the Sound Realms app.</p>
-      <input v-model="username" placeholder="Username or email address" />
+      <input v-model="username" placeholder="Username or email address" @keyup.enter="login()" />
       <input v-model="password" placeholder="Password" type="password" @keyup.enter="login()"  />
       <div v-if="error">
         <p class="error-text">{{error}}</p>
