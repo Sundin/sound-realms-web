@@ -67,7 +67,8 @@ h1 {
   max-width: 100%;
 }
 
-.checkout-button {
-  margin: 50px;
+button {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 </style>
