@@ -13,7 +13,9 @@
           </div>
           <p>Total Price: {{ totalPrice }} SEK</p>
           <p>(Logged in as {{ user.username }})</p>
-          <MyButton :click="checkout" class="checkout-button" :disabled="loading">Checkout</MyButton>
+          <MyButton :click="checkout" class="checkout-button" :disabled="loading"
+            >Checkout</MyButton
+          >
         </div>
       </div>
       <MainFooter />
@@ -31,7 +33,6 @@ import ProductsList from "./components/ProductsList.vue";
 import MyButton from "../components/MyButton.vue";
 import { StripeCheckout } from "@vue-stripe/vue-stripe";
 
-
 export default {
   name: "WebShop",
   components: {
@@ -44,8 +45,8 @@ export default {
     StripeCheckout,
   },
   mounted() {
-    console.log(`the component is now mounted.`)
-    profileController.getCurrentUser().then(user => this.$store.commit('setUser', user));
+    console.log(`the component is now mounted.`);
+    profileController.getCurrentUser().then((user) => this.$store.commit("setUser", user));
   },
   data() {
     return {
@@ -68,9 +69,12 @@ export default {
   methods: {
     async checkout() {
       this.loading = true;
-      const response = await fetch("https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session", {
-        method: "POST",
-      });
+      const response = await fetch(
+        "https://6j2f2a91be.execute-api.eu-north-1.amazonaws.com/api/create-checkout-session",
+        {
+          method: "POST",
+        }
+      );
       const jsonBody = await response.json();
       const redirectUri = jsonBody.redirect_url;
       console.log(redirectUri);

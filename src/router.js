@@ -47,7 +47,7 @@ const routes = [
   { path: '/newsletter', component: Newsletter },
   { path: '/shop', component: Shop },
   { path: '/shop/cart', component: Cart },
-  { path: '/checkout', component: Checkout },
+  { path: '/shop/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },
   { path: '/shop/create-account', component: CreateAccount },

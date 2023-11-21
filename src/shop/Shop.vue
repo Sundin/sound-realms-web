@@ -6,7 +6,7 @@
         <h1>Web Shop</h1>
         <ProductsList/>
         <div v-if="shoppingCart.length > 0">
-          <MyButton href="/shop/cart" class="checkout-button">Continue to Checkout</MyButton>
+          <MyButton href="/shop/checkout" class="checkout-button">Continue to Checkout</MyButton>
         </div>
       </div>
       <MainFooter />

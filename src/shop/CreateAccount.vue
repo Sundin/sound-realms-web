@@ -110,7 +110,7 @@ export default {
         this.$store.commit('setUser', user);
         this.loading = false;
         this.error = null;
-        this.$router.push('/shop/cart');
+        this.$router.push('/shop/checkout');
       } catch (error) {
         this.error = error;
         this.loading = false;
