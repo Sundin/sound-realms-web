@@ -38,10 +38,11 @@ const store = createStore({
       state.user = user;
     },
     addToCart(state, product) {
+      if (state.shoppingCart.some(e => e.id === product.id)) {
+        // Don't allow duplicated in array
+        return;
+      }
       state.shoppingCart.push(product);
-      state.shoppingCart = state.shoppingCart.filter((value, index, array) => {
-        return array.indexOf(value) === index;
-      });
     },
     removeFromCart(state, product) {
       state.shoppingCart = state.shoppingCart.filter(function(el) {
