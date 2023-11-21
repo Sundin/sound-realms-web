@@ -23,9 +23,11 @@ import Checkout from './shop/Checkout.vue';
 import Success from './shop/Success.vue';
 import Cancel from './shop/Cancel.vue';
 import CreateAccount from './shop/CreateAccount.vue';
+import AllGames from './adventures/AllGames.vue';
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/games', component: AllGames },
   { path: '/feedback', component: Contact },
   { path: '/faq', component: Faq },
   { path: '/learn-more', component: LearnMore },
