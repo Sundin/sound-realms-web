@@ -88,7 +88,6 @@ export default {
           password: this.password,
           email: this.email,
         });
-        //this.$store.commit('setUser', user);
         this.loading = false;
         this.error = null;
         if (user !== null) {

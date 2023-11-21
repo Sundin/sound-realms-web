@@ -31,6 +31,7 @@ import ProductsList from "./components/ProductsList.vue";
 import MyButton from "../components/MyButton.vue";
 import { StripeCheckout } from "@vue-stripe/vue-stripe";
 
+
 export default {
   name: "WebShop",
   components: {
@@ -41,6 +42,10 @@ export default {
     ProductsList,
     MyButton,
     StripeCheckout,
+  },
+  mounted() {
+    console.log(`the component is now mounted.`)
+    profileController.getCurrentUser().then(user => this.$store.commit('setUser', user));
   },
   data() {
     return {

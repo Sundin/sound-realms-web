@@ -16,6 +16,11 @@ const helpers = {
       throw error;
     }
   },
+  async getCurrentUser() {
+    const user = await getCurrentUser();
+    console.log(user);
+    return user;
+  },
   async handleSignUp({ username, password, email }) {
     try {
       const signupResult = await signUp({

@@ -40,6 +40,10 @@ export default {
     ProductsList,
     MyButton,
   },
+  mounted() {
+    console.log(`the component is now mounted.`)
+    profileController.getCurrentUser().then(user => this.$store.commit('setUser', user));
+  },
   data() {
     return {
       username: '',
