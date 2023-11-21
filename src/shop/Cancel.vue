@@ -3,7 +3,12 @@
     <div class="content">
       <TopMenu />
       <div class="section-content">
-        <h1>Purchase Cancelled</h1>
+        <h1>Payment Cancelled</h1>
+        <p>
+          Either the payment was cancelled or something went wrong. Please try again or contact our
+          support team at dm@sound-realms.com if the problem persists
+        </p>
+        <MyButton href="/shop">Return to Shop</MyButton>
       </div>
       <MainFooter />
     </div>
@@ -11,14 +16,13 @@
 </template>
 
 <script>
-import MainLayout from '../layouts/Main.vue';
-import MainFooter from '../components/MainFooter.vue';
-import TopMenu from '../components/TopMenu.vue';
-import profileController from './profileController';
-import MyButton from '../components/MyButton.vue';
+import MainLayout from "../layouts/Main.vue";
+import MainFooter from "../components/MainFooter.vue";
+import TopMenu from "../components/TopMenu.vue";
+import MyButton from "../components/MyButton.vue";
 
 export default {
-  name: 'WebShop',
+  name: "WebShopCancelPage",
   components: {
     MainLayout,
     MainFooter,
@@ -27,8 +31,8 @@ export default {
   },
   data() {
     return {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
     };
   },
   computed: {
@@ -66,5 +70,4 @@ h1 {
 .checkout-button {
   margin: 50px;
 }
-
 </style>

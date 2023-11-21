@@ -38,7 +38,7 @@ import LoginComponent from "./components/LoginComponent.vue";
 import MyButton from "../components/MyButton.vue";
 
 export default {
-  name: "WebShop",
+  name: "CheckoutPage",
   components: {
     MainLayout,
     MainFooter,

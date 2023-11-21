@@ -40,21 +40,15 @@ import MainLayout from "../layouts/Main.vue";
 import MainFooter from "../components/MainFooter.vue";
 import TopMenu from "../components/TopMenu.vue";
 import profileController from "./profileController";
-import LoginComponent from "./components/LoginComponent.vue";
-import ProductsList from "./components/ProductsList.vue";
 import MyButton from "../components/MyButton.vue";
-import { StripeCheckout } from "@vue-stripe/vue-stripe";
 
 export default {
-  name: "WebShop",
+  name: "CreateAccount",
   components: {
     MainLayout,
     MainFooter,
     TopMenu,
-    LoginComponent,
-    ProductsList,
     MyButton,
-    StripeCheckout,
   },
   data() {
     return {

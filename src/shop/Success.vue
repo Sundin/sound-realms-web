@@ -19,7 +19,7 @@ import TopMenu from "../components/TopMenu.vue";
 import MyButton from "../components/MyButton.vue";
 
 export default {
-  name: "WebShop",
+  name: "WebShopSuccessPage",
   components: {
     MainLayout,
     MainFooter,
