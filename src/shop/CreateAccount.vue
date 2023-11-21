@@ -39,7 +39,7 @@
 import MainLayout from "../layouts/Main.vue";
 import MainFooter from "../components/MainFooter.vue";
 import TopMenu from "../components/TopMenu.vue";
-import profileController from "./profileController";
+import profileController from "../profileController";
 import MyButton from "../components/MyButton.vue";
 
 export default {

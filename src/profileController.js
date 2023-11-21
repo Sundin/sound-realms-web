@@ -53,17 +53,6 @@ const helpers = {
       throw error;
     }
   },
-  async handleAutoSignIn() {
-    try {
-      await this.handleSignOut();
-      const signInOutput = await autoSignIn();
-      console.log("AUTO SIGN IN");
-      console.log(signInOutput);
-      // handle sign-in steps
-    } catch (error) {
-      console.log(error);
-    }
-  },
   async handleSignOut() {
     try {
       await signOut();

@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import profileController from '../profileController';
-import MyButton from '../../components/MyButton.vue';
+import profileController from '@/profileController';
+import MyButton from '@/components/MyButton.vue';
 
 export default {
   name: 'LoginComponent',

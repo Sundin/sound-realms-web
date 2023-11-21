@@ -24,6 +24,7 @@ import Success from './shop/Success.vue';
 import Cancel from './shop/Cancel.vue';
 import CreateAccount from './shop/CreateAccount.vue';
 import AllGames from './adventures/AllGames.vue';
+import AccountPage from './account/AccountPage.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -46,6 +47,7 @@ const routes = [
   { path: '/fortressofdeath', component: FortressOfDeath, meta: { title: 'The Fortress of Death' } },
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
   { path: '/newsletter', component: Newsletter },
+  { path: '/account', component: AccountPage },
   { path: '/shop', component: Shop },
   { path: '/shop/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
