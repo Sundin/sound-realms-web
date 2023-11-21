@@ -26,14 +26,14 @@ export default {
     return {
       products: [
         {
-          image: '/src/assets/fod/fod-funded.jpg',
+          image: '/images/fod-funded.jpg',
           title: 'Lone Wolf: The Fortress of Death',
           price: 150,
           description: 'Pre-Order',
           id: 'fod-pre-order',
         },
         {
-          image: '/src/assets/fist/fist-square.jpg',
+          image: '/images/fist-square.jpg',
           title: 'Steve Jackson\'s F.I.S.T.',
           price: 150,
           description: 'Pre-Order',
