@@ -78,6 +78,7 @@ button {
 .disabledButton {
   background-color: white;
   color: gray;
+  cursor: auto;
 }
 .disabledButton:hover {
   opacity: 0.8;

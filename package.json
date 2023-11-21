@@ -8,6 +8,9 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.5",
     "@vitejs/plugin-vue": "4.4.1",
     "@vue-stripe/vue-stripe": "^4.5.0",
     "aws-amplify": "6.0.4",

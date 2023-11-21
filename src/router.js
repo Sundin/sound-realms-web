@@ -19,7 +19,6 @@ import FortressOfDeath from './adventures/fortressofdeath/FortressOfDeath.vue';
 import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
 import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
-import Cart from './shop/Cart.vue';
 import Checkout from './shop/Checkout.vue';
 import Success from './shop/Success.vue';
 import Cancel from './shop/Cancel.vue';
@@ -46,7 +45,6 @@ const routes = [
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
   { path: '/newsletter', component: Newsletter },
   { path: '/shop', component: Shop },
-  { path: '/shop/cart', component: Cart },
   { path: '/shop/checkout', component: Checkout },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },

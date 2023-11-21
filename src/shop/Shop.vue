@@ -72,7 +72,11 @@ h1 {
 }
 
 .checkout-button {
-  margin: 50px;
+  margin-top: 50px;
+}
+
+.section-content {
+  margin-bottom: 50px;
 }
 
 </style>

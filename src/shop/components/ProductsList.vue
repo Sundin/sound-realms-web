@@ -30,12 +30,14 @@ export default {
           title: 'Lone Wolf: The Fortress of Death',
           price: 150,
           description: 'Pre-Order',
+          id: 'fod-pre-order',
         },
         {
           image: '/src/assets/fist/fist-square.jpg',
           title: 'Steve Jackson\'s F.I.S.T.',
           price: 150,
           description: 'Pre-Order',
+          id: 'fist-pre-order',
         },
       ],
     };

@@ -7,13 +7,19 @@
         <div v-if="user === null">
           <LoginComponent />
         </div>
+        <div v-else-if="cartIsEmpty">
+          <p>No products in shopping cart</p>
+          <MyButton href="/shop" class="checkout-button" :disabled="loading"
+            >Return to Shop</MyButton
+          >
+        </div>
         <div v-else>
-          <div v-for="product in shoppingCart" :key="product.title">
-            <p>{{ product.title }}, {{ product.price }} SEK</p>
+          <div v-for="product in shoppingCart" :key="product.id">
+            <p>{{ product.title }}, {{ product.price }} SEK <span class='clickableIcon' @click="()=>removeFromCart(product)"><font-awesome-icon icon="fa-solid fa-trash"/></span></p>
           </div>
           <p>Total Price: {{ totalPrice }} SEK</p>
           <p>(Logged in as {{ user.username }})</p>
-          <MyButton :click="checkout" class="checkout-button" :disabled="loading"
+          <MyButton :click="checkout" class="checkout-button" :disabled="loading || cartIsEmpty"
             >Checkout</MyButton
           >
         </div>
@@ -62,6 +68,9 @@ export default {
     shoppingCart() {
       return this.$store.state.shoppingCart;
     },
+    cartIsEmpty() {
+      return this.$store.state.shoppingCart.length === 0;
+    },
     totalPrice() {
       return this.$store.state.shoppingCart.reduce((partialSum, a) => partialSum + a.price, 0);
     },
@@ -80,6 +89,9 @@ export default {
       console.log(redirectUri);
       window.location.href = redirectUri;
     },
+    removeFromCart(product) {
+      this.$store.commit('removeFromCart', product);
+    }
   },
 };
 </script>
@@ -107,5 +119,9 @@ h1 {
 
 .checkout-button {
   margin: 50px;
+}
+
+.clickableIcon {
+  cursor: pointer
 }
 </style>
