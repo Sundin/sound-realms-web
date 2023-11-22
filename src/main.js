@@ -16,10 +16,18 @@ library.add(faXmark);
 library.add(faTrash);
 library.add(faUserSecret);
 
+// DEV
+// Amplify.configure({
+//   aws_cognito_region: "eu-north-1",
+//   aws_user_pools_id: "eu-north-1_wScBt5dG1",
+//   aws_user_pools_web_client_id: "6rji8tci1r0u5mfdp8iemtvjmn"
+// });
+
+// PROD
 Amplify.configure({
   aws_cognito_region: "eu-north-1",
-  aws_user_pools_id: "eu-north-1_wScBt5dG1",
-  aws_user_pools_web_client_id: "6rji8tci1r0u5mfdp8iemtvjmn"
+  aws_user_pools_id: "eu-north-1_pZ63tejOu",
+  aws_user_pools_web_client_id: "e83tu0ab4amfr4m0uu57co62p"
 });
 
 const vuexLocal = new VuexPersistence({
