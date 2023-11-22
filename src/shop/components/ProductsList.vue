@@ -2,10 +2,11 @@
   <main-layout>
     <div class="content">
       <div class="grid-container">
-        <div v-for="(product) in products" :key="product.title">
+        <div v-for="(product) in products" :key="product.title" class="productCard">
           <img :src="getImageUrl(product)" :alt="product.title" />
-          <p>{{product.title}} (Pre-Order)</p>
-          <p class="center-me">{{product.price}} SEK</p>
+          <p class="cardHeader">{{product.title}}</p>
+          <p class="cardText"> (Pre-Order)</p>
+          <p class="center-me cardPrice">{{product.price}} SEK</p>
           <MyButton :click="() => addToCart(product)">Add To Cart</MyButton>
         </div>
         <div></div>
@@ -77,5 +78,30 @@ export default {
   max-width: 40%;
   padding-bottom: 30px;
   padding-right: 30px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.productCard .cardText {
+  text-align: center;
+}
+.productCard .cardHeader {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.productCard .cardPrice {
+  text-align: center;
+  font-size: 70%;
+}
+.productCard:hover{
+
+  background: rgba(0, 0, 0, 0.05) url('http://fc02.deviantart.net/fs71/i/2011/274/6/f/ocean__sky__stars__and_you_by_muddymelly-d4bg1ub.png');
+background-blend-mode: darken;
 }
 </style>
