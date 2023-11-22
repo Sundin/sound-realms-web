@@ -3,8 +3,9 @@
     <div class="content">
       <TopMenu />
       <div class="section-content">
-        <h1>Thank You!</h1>
-        <p>Stay tuned for updates, and thanks for supporting Sound Realms!</p>
+        <h1>Order Completed</h1>
+        <p>Congratulations on securing your preorder <i>{{gameTitles}}</i>!</p>
+        <p>We appreciate your enthusiasm and look forward to delivering an unforgettable experience when the game is released. Stay tuned for updates, and thank you for being a part of this adventure!</p>
         <MyButton href="/">Return Home</MyButton>
       </div>
       <MainFooter />
@@ -39,6 +40,16 @@ export default {
     shoppingCart() {
       return this.$store.state.shoppingCart;
     },
+    gameTitles() {
+      const shoppingCart = this.$store.state.shoppingCart;
+      if (shoppingCart.length === 0) {
+        return "";
+      } else if (shoppingCart.length === 1) {
+        return this.$store.state.shoppingCart[0].title;
+      } else {
+        return " for " + shoppingCart.map(u => u.title).join(' and ');
+      }
+    }
   },
 };
 </script>
