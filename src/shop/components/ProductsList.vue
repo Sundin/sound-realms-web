@@ -84,6 +84,7 @@ export default {
   flex-direction: column;
   padding: 10px;
   border-radius: 15px;
+  background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .productCard .cardText {
@@ -100,8 +101,10 @@ export default {
   font-size: 70%;
 }
 .productCard:hover{
+  background: #eeeeee;
+}
 
-  background: rgba(0, 0, 0, 0.05) url('http://fc02.deviantart.net/fs71/i/2011/274/6/f/ocean__sky__stars__and_you_by_muddymelly-d4bg1ub.png');
-background-blend-mode: darken;
+.productCard img {
+  border-radius: 10px;
 }
 </style>
