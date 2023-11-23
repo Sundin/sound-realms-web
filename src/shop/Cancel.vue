@@ -78,7 +78,10 @@ export default {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({products: this.shoppingCart}),
+          body: JSON.stringify({
+            products: this.shoppingCart,
+            baseUrl: window.location.origin,
+          }),
         }
       );
       const jsonBody = await response.json();
