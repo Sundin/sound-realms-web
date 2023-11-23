@@ -18,7 +18,6 @@
             <p>{{ product.title }}, {{ product.price }} SEK <span class='clickableIcon' @click="()=>removeFromCart(product)"><font-awesome-icon icon="fa-solid fa-trash"/></span></p>
           </div>
           <p>Total Price: {{ totalPrice }} SEK</p>
-          <p>(Logged in as {{ user.username }})</p>
           <MyButton :click="checkout" class="checkout-button" :disabled="loading || cartIsEmpty"
             >Checkout</MyButton
           >
