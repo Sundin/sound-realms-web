@@ -4,6 +4,7 @@
       <TopMenu />
       <div class="section-content">
         <div v-if="user === null">
+          <h1>Account</h1>
           <LoginComponent />
         </div>
         <div v-else>

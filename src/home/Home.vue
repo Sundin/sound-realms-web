@@ -76,7 +76,7 @@
         </div>
 
         <div class="section-content">
-          <div class="row">
+          <div class="game-icons">
             <div>
               <a href="/maceandmagic" class="dreadhorn_image">
                 <img src="../assets/home/dreadhorn.png" alt="Mace & Magic" />
@@ -143,11 +143,10 @@ h2 {
   margin-right: auto;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+.game-icons {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 960px;
 }
 .text {
@@ -237,8 +236,8 @@ h2 {
 }
 
 @media screen and (max-width: 980px) {
-  .row {
-    flex-direction: column;
+  .game-icons {
+    grid-template-columns: repeat(2, 1fr);
   }
   .dreadhorn_image {
     max-width: 80%;
@@ -249,6 +248,9 @@ h2 {
   }
 }
 @media screen and (max-width: 680px) {
+  .game-icons {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .hero-text {
     font-size: 0.8rem;
   }
