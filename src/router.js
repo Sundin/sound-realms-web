@@ -21,6 +21,7 @@ import Dracula from './adventures/dracula/Dracula.vue';
 import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
 import Checkout from './shop/Checkout.vue';
+import CheckoutLogin from './shop/Login.vue';
 import Success from './shop/Success.vue';
 import Cancel from './shop/Cancel.vue';
 import CreateAccount from './shop/CreateAccount.vue';
@@ -55,6 +56,7 @@ const routes = [
   { path: '/account/forgot-password', component: ForgotPassword },
   { path: '/shop', component: Shop },
   { path: '/shop/checkout', component: Checkout },
+  { path: '/shop/login', component: CheckoutLogin },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },
   { path: '/:pathMatch(.*)*', component: NotFound },

@@ -3,33 +3,16 @@
     <div class="content">
       <TopMenu />
       <div class="section-content">
-        <h1>Shopping Cart</h1>
-        <div v-if="cartIsEmpty">
-          <p>No products in shopping cart</p>
-          <MyButton href="/shop" class="checkout-button" :disabled="loading"
-            >Return to Shop</MyButton
-          >
+        <div v-if="user === null">
+          <h1>Login or Create Account</h1>
+          <LoginComponent />
         </div>
         <div v-else>
-          <div v-for="product in shoppingCart" :key="product.id">
-            <p>
-              {{ product.title }}, {{ product.price }} SEK
-              <span class="clickableIcon" @click="() => removeFromCart(product)"
-                ><font-awesome-icon icon="fa-solid fa-trash"
-              /></span>
-            </p>
-          </div>
-          <p>Total Price: {{ totalPrice }} SEK</p>
-          <div v-if="user === null">
-            <MyButton href="/shop/login" class="checkout-button" :disabled="loading"
-              >Continue</MyButton
-            >
-          </div>
-          <div v-else>
-            <MyButton :click="checkout" class="checkout-button" :disabled="loading || cartIsEmpty"
-              >Checkout</MyButton
-            >
-          </div>
+          <h1>Checkout</h1>
+          <p>You are logged in as {{user.username}}. Press the button below to continue to the payment step.</p>
+          <MyButton :click="checkout" class="checkout-button" :disabled="loading || cartIsEmpty"
+            >Checkout</MyButton
+          >
         </div>
       </div>
       <MainFooter />
@@ -42,14 +25,16 @@ import MainLayout from "../layouts/Main.vue";
 import MainFooter from "../components/MainFooter.vue";
 import TopMenu from "../components/TopMenu.vue";
 import profileController from "../profileController";
+import LoginComponent from "@/components/LoginComponent.vue";
 import MyButton from "../components/MyButton.vue";
 
 export default {
-  name: "CheckoutPage",
+  name: "CheckoutLoginPage",
   components: {
     MainLayout,
     MainFooter,
     TopMenu,
+    LoginComponent,
     MyButton,
   },
   mounted() {
