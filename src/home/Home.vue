@@ -95,6 +95,11 @@
                 <img src="../assets/home/dracula.png" alt="Dracula: Curse of the Vampire" />
               </a>
             </div>
+            <div>
+              <a href="/fist" class="dreadhorn_image">
+                <img src="../assets/home/fist.png" alt="Steve Jackson's F.I.S.T." />
+              </a>
+            </div>
           </div>
         </div>
       </section>
