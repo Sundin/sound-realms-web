@@ -10,13 +10,14 @@ import Presskit from './presskit/Presskit.vue';
 import FodKickstarterPress from './presskit/FodKickstarterPress.vue';
 import FodFunded from './presskit/FodFunded.vue';
 import FodKsComplete from './presskit/FodKsComplete.vue';
-import Dracula from './presskit/Dracula.vue';
+import DraculaPress from './presskit/Dracula.vue';
 import PrivacyPolicy from './privacy/PrivacyPolicy.vue';
 import PrivacyPolicy2 from './privacy/PrivacyPolicy2.vue';
 import PrivacyPolicy3 from './privacy/PrivacyPolicy3.vue';
 import Newsletter from './newsletter/Newsletter.vue';
 import FortressOfDeath from './adventures/fortressofdeath/FortressOfDeath.vue';
 import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
+import Dracula from './adventures/dracula/Dracula.vue';
 import NotFound from './pages/NotFound.vue';
 
 const routes = [
@@ -32,12 +33,13 @@ const routes = [
   { path: '/press/fod-kickstarter', component: FodKickstarterPress },
   { path: '/press/fod-funded', component: FodFunded },
   { path: '/press/fod-ks-complete', component: FodKsComplete },
-  { path: '/press/dracula', component: Dracula },
+  { path: '/press/dracula', component: DraculaPress },
   { path: '/privacy-policy', component: PrivacyPolicy },
   { path: '/privacypolicy', component: PrivacyPolicy2 },
   { path: '/privacy', component: PrivacyPolicy3 },
   { path: '/fortressofdeath', component: FortressOfDeath, meta: { title: 'The Fortress of Death' } },
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
+  { path: '/dracula', component: Dracula, meta: { title: 'Dracula: Curse of the Vampire' } },
   { path: '/newsletter', component: Newsletter },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
