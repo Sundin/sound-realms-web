@@ -18,6 +18,7 @@ import Newsletter from './newsletter/Newsletter.vue';
 import FortressOfDeath from './adventures/fortressofdeath/FortressOfDeath.vue';
 import MaceAndMagic from './adventures/maceandmagic/MaceAndMagic.vue';
 import Dracula from './adventures/dracula/Dracula.vue';
+import Fist from './adventures/fist/Fist.vue';
 import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
 import Checkout from './shop/Checkout.vue';
@@ -49,6 +50,7 @@ const routes = [
   { path: '/privacy', component: PrivacyPolicy3 },
   { path: '/fortressofdeath', component: FortressOfDeath, meta: { title: 'The Fortress of Death' } },
   { path: '/maceandmagic', component: MaceAndMagic, meta: { title: 'Mace & Magic' } },
+  { path: '/fist', component: Fist, meta: { title: 'F.I.S.T.' } },
   { path: '/dracula', component: Dracula, meta: { title: 'Dracula: Curse of the Vampire' } },
   { path: '/newsletter', component: Newsletter },
   { path: '/account', component: AccountPage },
