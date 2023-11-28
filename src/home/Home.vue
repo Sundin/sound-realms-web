@@ -2,10 +2,14 @@
   <main-layout>
     <div class="content">
       <div class="topSection">
-      <!-- <img alt="Sound Realms logo" class="topImage" src="../assets/home/sr-cover-image.jpg" /> -->
-      <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death/" target="_blank">
-        <img alt="Sound Realms Kickstarter" class="topImage" src="../assets/home/fod-home-banner.jpg" />
-      </a>
+        <!-- <img alt="Sound Realms logo" class="topImage" src="../assets/home/sr-cover-image.jpg" /> -->
+        <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death/" target="_blank">
+          <img
+            alt="Sound Realms Kickstarter"
+            class="topImage"
+            src="../assets/home/fod-home-banner.jpg"
+          />
+        </a>
       </div>
       <section>
         <div class="section-content">
@@ -25,7 +29,7 @@
 
           <div class="columns">
             <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
-              <img src="../assets/gametest/google-play-badge.png" class="small-image"/>
+              <img src="../assets/gametest/google-play-badge.png" class="small-image" />
             </a>
 
             <a href="https://play.google.com/store/apps/details?id=com.wolfhand.audioquest">
@@ -33,7 +37,7 @@
             </a>
 
             <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
-              <img src="../assets/gametest/app-store-badge.png" class="small-image"/>
+              <img src="../assets/gametest/app-store-badge.png" class="small-image" />
             </a>
 
             <a href="https://apps.apple.com/se/app/sound-realms/id1587860372">
@@ -53,7 +57,7 @@
             adventures. Occassionally you will also receive free in-game bonus items and other
             goodies.
           </p>
-          <NewsletterSignupForm/>
+          <NewsletterSignupForm />
         </div>
       </div>
 
@@ -64,9 +68,10 @@
             Sound Realms is a platform where you will find a wide range of RPG audio solo
             adventures. In the future we will expand this range to include many different genres and
             styles &mdash; fantasy, horror, sci-fi and so on &mdash; but currently you will find two
-            separate Realms in the app. One is <i><a href="/maceandmagic">Mace & Magic</a></i>, our own post-apocalyptic fantasy
-            world, and the other is <i><a href="/fortressofdeath">Lone Wolf: The Fortress of Death</a></i>, a direct continuation
-            of Joe Dever's classic Lone Wolf saga.
+            separate Realms in the app. One is <i><a href="/maceandmagic">Mace & Magic</a></i
+            >, our own post-apocalyptic fantasy world, and the other is
+            <i><a href="/fortressofdeath">Lone Wolf: The Fortress of Death</a></i
+            >, a direct continuation of Joe Dever's classic Lone Wolf saga.
           </p>
         </div>
 
@@ -79,7 +84,10 @@
             </div>
             <div>
               <a href="/fortressofdeath" class="dreadhorn_image">
-                <img src="../assets/home/fod-round-funded.png" alt="Lone Wolf: The Fortress of Death" />
+                <img
+                  src="../assets/home/fod-round-funded.png"
+                  alt="Lone Wolf: The Fortress of Death"
+                />
               </a>
             </div>
             <div>
@@ -97,12 +105,12 @@
 </template>
 
 <script>
-import MainFooter from '../components/MainFooter.vue';
-import MainLayout from '../layouts/Main.vue';
-import NewsletterSignupForm from '../components/NewsletterSignupForm.vue';
+import MainFooter from "../components/MainFooter.vue";
+import MainLayout from "../layouts/Main.vue";
+import NewsletterSignupForm from "../components/NewsletterSignupForm.vue";
 
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     MainFooter,
     MainLayout,
@@ -117,7 +125,8 @@ export default {
   width: 100%;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -262,7 +271,8 @@ h2 {
   height: 600px;
 }
 
-.strip > h1,h2 {
+.strip > h1,
+h2 {
   color: white;
 }
 </style>

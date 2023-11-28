@@ -4,39 +4,48 @@
       <section>
         <div class="section-content">
           <MyBreadcrumbs
-          :breadcrumbs="[
-            {
-              title: 'Sound Realms',
-              link: '/',
-            },
-            {
-              title: 'Games',
-            },
-          ]"
-        />
+            :breadcrumbs="[
+              {
+                title: 'Sound Realms',
+                link: '/',
+              },
+              {
+                title: 'Games',
+              },
+            ]"
+          />
           <h1>Our Games</h1>
           <p>
             Sound Realms is a platform where you will find a wide range of RPG audio solo
             adventures. In the future we will expand this range to include many different genres and
             styles &mdash; fantasy, horror, sci-fi and so on &mdash; but currently you will find two
-            separate Realms in the app. One is <i><a href="/maceandmagic">Mace & Magic</a></i>, our own post-apocalyptic fantasy
-            world, and the other is <i><a href="/fortressofdeath">Lone Wolf: The Fortress of Death</a></i>, a direct continuation
-            of Joe Dever's classic Lone Wolf saga.
+            separate Realms in the app. One is <i><a href="/maceandmagic">Mace & Magic</a></i
+            >, our own post-apocalyptic fantasy world, and the other is
+            <i><a href="/fortressofdeath">Lone Wolf: The Fortress of Death</a></i
+            >, a direct continuation of Joe Dever's classic Lone Wolf saga.
           </p>
         </div>
 
         <div class="section-content">
           <div class="row">
             <div>
-            <a href="/maceandmagic" class="dreadhorn_image">
-              <img src="../assets/home/dreadhorn.png" alt="Mace & Magic" />
-            </a>
-          </div>
-          <div>
-            <a href="/fortressofdeath" class="dreadhorn_image">
-              <img src="../assets/home/fod-round-funded.png" alt="Lone Wolf: The Fortress of Death" />
-            </a>
-          </div>
+              <a href="/maceandmagic" class="dreadhorn_image">
+                <img src="../assets/home/dreadhorn.png" alt="Mace & Magic" />
+              </a>
+            </div>
+            <div>
+              <a href="/fortressofdeath" class="dreadhorn_image">
+                <img
+                  src="../assets/home/fod-round-funded.png"
+                  alt="Lone Wolf: The Fortress of Death"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="/dracula" class="dreadhorn_image">
+                <img src="../assets/home/dracula.png" alt="Dracula: Curse of the Vampire" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -47,13 +56,12 @@
 </template>
 
 <script>
-import MainFooter from '../components/MainFooter.vue';
-import MainLayout from '../layouts/Main.vue';
+import MainFooter from "../components/MainFooter.vue";
+import MainLayout from "../layouts/Main.vue";
 import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
 
-
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     MainFooter,
     MainLayout,
@@ -68,7 +76,8 @@ export default {
   width: 100%;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -213,7 +222,8 @@ h2 {
   height: 600px;
 }
 
-.strip > h1,h2 {
+.strip > h1,
+h2 {
   color: white;
 }
 </style>
