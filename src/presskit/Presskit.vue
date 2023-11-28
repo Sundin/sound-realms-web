@@ -108,7 +108,7 @@
           </p>
           <p>
             Commercial video clip for Mace & Magic:
-            <a href="https://youtu.be/cgIQ1PiHwmo" target="_blank">https://youtu.be/cgIQ1PiHwmo</a>
+            <a href="https://www.youtube.com/watch?v=DUsosTA0fss" target="_blank">https://www.youtube.com/watch?v=DUsosTA0fss</a>
           </p>
           <p>
             Introductionary video for The Fortress of Death:
