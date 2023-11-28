@@ -93,14 +93,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 960px;
-}
 .text {
   align-items: flex-start;
 }
@@ -187,9 +179,15 @@ h2 {
   padding-bottom: 30px;
 }
 
+.row {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+}
 @media screen and (max-width: 980px) {
   .row {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
   }
   .dreadhorn_image {
     max-width: 80%;
@@ -200,6 +198,9 @@ h2 {
   }
 }
 @media screen and (max-width: 680px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .hero-text {
     font-size: 0.8rem;
   }
