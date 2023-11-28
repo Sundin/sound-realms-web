@@ -9,11 +9,12 @@ import App from "./App.vue";
 import router from "./router";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faXmark, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faTrash, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faXmark);
 library.add(faTrash);
+library.add(faCartShopping);
 library.add(faUserSecret);
 
 // DEV

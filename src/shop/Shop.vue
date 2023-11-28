@@ -2,7 +2,14 @@
   <main-layout>
     <div class="content">
       <div class="section-content">
-        <h1>Web Shop</h1>
+        <div class="header-row">
+          <span></span>
+          <h1>Web Shop</h1>
+          <span class='clickableIcon' @click="()=>displayCart(product)">
+            <font-awesome-icon icon="fa-solid fa-cart-shopping"/>
+            <div v-if="productsInCart > 0" class="numberCircle">{{productsInCart}}</div>
+          </span>
+        </div>
         <ProductsList/>
         <div v-if="shoppingCart.length > 0">
           <MyButton href="/shop/checkout" class="checkout-button">Continue to Checkout</MyButton>
@@ -40,6 +47,14 @@ export default {
     shoppingCart() {
       return this.$store.state.shoppingCart;
     },
+    productsInCart() {
+      return this.$store.state.shoppingCart.length;
+    },
+  },
+  methods: {
+    displayCart() {
+      window.location.href = '/shop/checkout';
+    },
   },
 };
 </script>
@@ -71,6 +86,26 @@ h1 {
 
 .section-content {
   margin-bottom: 50px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 12px Arial, sans-serif;
 }
 
 </style>

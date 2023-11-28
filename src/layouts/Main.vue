@@ -193,4 +193,8 @@ h3 {
   max-height: 400px;
 }
 
+.clickableIcon {
+  cursor: pointer
+}
+
 </style>
