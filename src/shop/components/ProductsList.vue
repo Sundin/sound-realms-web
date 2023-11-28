@@ -51,9 +51,16 @@ export default {
         {
           image: '/images/fod-funded.jpg',
           title: 'The Fortress of Death Expansions (12 months)',
-          price: 110,
+          price: 120,
           description: 'Access to all expansions coming out for 12 months following the game\'s release.',
           id: 'fod-expansions',
+        },
+        {
+          image: '/images/fod-funded.jpg',
+          title: 'Test Product',
+          price: 10,
+          description: 'Testing...',
+          id: 'test-product',
         },
       ],
     };
