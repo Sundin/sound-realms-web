@@ -16,7 +16,6 @@
 
 export default {
   name: 'TopMenu',
-
 };
 </script>
 
@@ -63,7 +62,8 @@ a {
     flex-direction: column;
   }
   .link-wrapper {
-    flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 10px;
   }
   a {
     font-size: 60%;
