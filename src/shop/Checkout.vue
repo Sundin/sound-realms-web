@@ -121,8 +121,4 @@ h1 {
 .checkout-button {
   margin: 50px;
 }
-
-.clickableIcon {
-  cursor: pointer
-}
 </style>
