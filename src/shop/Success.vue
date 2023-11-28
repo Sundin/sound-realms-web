@@ -26,6 +26,9 @@ export default {
     TopMenu,
     MyButton,
   },
+  mounted() {
+    this.$store.commit("clearCart");
+  },
   data() {
     return {
       username: "",

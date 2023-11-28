@@ -46,6 +46,9 @@ const store = createStore({
     setUser(state, user) {
       state.user = user;
     },
+    clearCart(state) {
+      state.shoppingCart = [];
+    },
     addToCart(state, product) {
       if (state.shoppingCart.some(e => e.id === product.id)) {
         // Don't allow duplicated in array
