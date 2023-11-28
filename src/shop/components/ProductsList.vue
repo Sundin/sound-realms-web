@@ -42,7 +42,7 @@ export default {
           id: 'fist-pre-order',
         },
         {
-          image: '/images/fod-funded.jpg',
+          image: '/images/bundle-shop.png',
           title: 'The Fortress of Death + F.I.S.T. Bundle',
           price: 500,
           description: 'Includes access to all Fortress of Death expansions for 12 months starting from the game\'s release date.',
