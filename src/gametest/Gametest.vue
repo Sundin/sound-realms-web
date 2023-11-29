@@ -42,17 +42,6 @@
             <img src="../assets/gametest/ios_qr.png" class="qr" />
           </a>
         </div>
-
-        <a href="https://www.kickstarter.com/projects/varghand/fortress-of-death" target="_blank">
-          <img src="../assets/fod/fod-now-live.jpg"  />
-        </a>
-          <MyButton
-            external="true"
-            class="button"
-            href="https://www.kickstarter.com/projects/varghand/fortress-of-death"
-          >
-            Join us on Kickstarter!
-          </MyButton>
       </div>
       <MainFooter />
     </div>
@@ -64,7 +53,6 @@ import MainLayout from '../layouts/Main.vue';
 import MainFooter from '../components/MainFooter.vue';
 import TopMenu from '../components/TopMenu.vue';
 import MyBreadcrumbs from '../components/MyBreadcrumbs.vue';
-import MyButton from '../components/MyButton.vue';
 
 export default {
   name: 'GameTest',
@@ -73,7 +61,6 @@ export default {
     MainFooter,
     TopMenu,
     MyBreadcrumbs,
-    MyButton,
   },
 };
 </script>
