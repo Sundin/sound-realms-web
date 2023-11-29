@@ -70,7 +70,7 @@
             touch-tone telephone.
           </p>
 
-          <img src="../assets/fist/fighting-fantasy.png" alt="Fighting Fantasy" class="image" />
+          <img src="../assets/fist/fighting-fantasy.png" alt="Fighting Fantasy" class="image fistlogo" />
 
           <h3>Links</h3>
           <p><a href="https://www.sound-realms.com">www.sound-realms.com</a></p>
@@ -141,5 +141,8 @@ h1 {
 
 .section-content {
   word-wrap: break-word;
+}
+.fistlogo {
+  max-width: 300px;
 }
 </style>
