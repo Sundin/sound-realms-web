@@ -60,8 +60,6 @@
 
           <h3>About Fighting Fantasy</h3>
 
-          <img src="../assets/fist/fighting-fantasy.png" alt="Fighting Fantasy" class="image" />
-
           <p>
             Fighting Fantasy is a series of single-player role-playing gamebooks created by Steve
             Jackson and Ian Livingstone. The first volume in the series was published in 1982. The
@@ -72,9 +70,11 @@
             touch-tone telephone.
           </p>
 
+          <img src="../assets/fist/fighting-fantasy.png" alt="Fighting Fantasy" class="image" />
+
           <h3>Links</h3>
           <p><a href="https://www.sound-realms.com">www.sound-realms.com</a></p>
-          <p><a href="https://www.fightingfantasy.com/" target="_blank">www.fightingfantasy.com/</a></p>
+          <p><a href="https://www.fightingfantasy.com/" target="_blank">www.fightingfantasy.com</a></p>
 
           <p>
             Download Sound Realms for free through Google Play or App Store and begin your adventure
