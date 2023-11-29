@@ -49,7 +49,7 @@ export default {
           id: 'bundle-pre-order',
         },
         {
-          image: '/images/fod-funded.jpg',
+          image: '/images/12m-updates.jpg',
           title: 'The Fortress of Death Expansions (12 months)',
           price: 120,
           description: 'Access to all expansions coming out for 12 months following the game\'s release.',
