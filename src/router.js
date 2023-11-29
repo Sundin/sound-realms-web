@@ -11,6 +11,7 @@ import FodKickstarterPress from './presskit/FodKickstarterPress.vue';
 import FodFunded from './presskit/FodFunded.vue';
 import FodKsComplete from './presskit/FodKsComplete.vue';
 import DraculaPress from './presskit/Dracula.vue';
+import AnnouncingFist from './presskit/AnnouncingFist.vue';
 import PrivacyPolicy from './privacy/PrivacyPolicy.vue';
 import PrivacyPolicy2 from './privacy/PrivacyPolicy2.vue';
 import PrivacyPolicy3 from './privacy/PrivacyPolicy3.vue';
@@ -45,6 +46,7 @@ const routes = [
   { path: '/press/fod-funded', component: FodFunded },
   { path: '/press/fod-ks-complete', component: FodKsComplete },
   { path: '/press/dracula', component: DraculaPress },
+  { path: '/press/fist', component: AnnouncingFist },
   { path: '/privacy-policy', component: PrivacyPolicy },
   { path: '/privacypolicy', component: PrivacyPolicy2 },
   { path: '/privacy', component: PrivacyPolicy3 },

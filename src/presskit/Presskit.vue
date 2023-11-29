@@ -28,6 +28,10 @@
           <h2>Press Releases</h2>
           <ul>
             <li class="bold">
+              December 2, 2023:
+              <a href="/press/fist" class="bold">The Return of Steve Jackson's F.I.S.T.</a>
+            </li>
+            <li class="bold">
               October 15, 2023:
               <a href="/press/fod-ks-complete" class="bold">Kickstarter Campaign Completed!</a>
             </li>
