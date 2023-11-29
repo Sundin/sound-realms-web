@@ -48,14 +48,33 @@
           </p>
           <p><strong>GET READY FOR F.I.S.T., THE RETURN!</strong></p>
 
+          <img src="../assets/fist/fist-square.jpg" alt="F.I.S.T. Returns!" class="image" />
+
+
           <h3>About Sound Realms</h3>
           <p>
             Sound Realms is a platform where you will find a range of RPG audio solo adventures, or
             interactive audio books. The adventures are presented by a narrator assuming the role of
             Game Master, backed by original orchestral music and cinematic sound effects.
           </p>
+
+          <h3>About Fighting Fantasy</h3>
+
+          <img src="../assets/fist/fighting-fantasy.png" alt="Fighting Fantasy" class="image" />
+
+          <p>
+            Fighting Fantasy is a series of single-player role-playing gamebooks created by Steve
+            Jackson and Ian Livingstone. The first volume in the series was published in 1982. The
+            series distinguished itself by mixing Choose Your Own Adventure-style storytelling with
+            a dice-based role-playing element included within the books themselves. In 1988 F.I.S.T.
+            was introduced by Steve Jackson: a radio drama version of the Fighting Fantasy novels,
+            where the outcome of the story could be affected by choices the user made using a
+            touch-tone telephone.
+          </p>
+
           <h3>Links</h3>
           <p><a href="https://www.sound-realms.com">www.sound-realms.com</a></p>
+          <p><a href="https://www.fightingfantasy.com/" target="_blank">www.fightingfantasy.com/</a></p>
 
           <p>
             Download Sound Realms for free through Google Play or App Store and begin your adventure
@@ -86,7 +105,6 @@
 import MainLayout from "../layouts/Main.vue";
 import MainFooter from "../components/MainFooter.vue";
 import TopMenu from "../components/TopMenu.vue";
-import MyButton from "../components/MyButton.vue";
 import MyBreadcrumbs from "../components/MyBreadcrumbs.vue";
 
 export default {
@@ -95,7 +113,6 @@ export default {
     MainLayout,
     MainFooter,
     TopMenu,
-    MyButton,
     MyBreadcrumbs,
   },
 };
