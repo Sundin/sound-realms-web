@@ -30,6 +30,7 @@ import CreateAccount from './shop/CreateAccount.vue';
 import AllGames from './adventures/AllGames.vue';
 import AccountPage from './account/AccountPage.vue';
 import ForgotPassword from './account/ForgotPassword.vue';
+import Jobs from './pages/Jobs.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -63,6 +64,7 @@ const routes = [
   { path: '/shop/login', component: CheckoutLogin },
   { path: '/shop/success', component: Success },
   { path: '/shop/cancel', component: Cancel },
+  { path: '/jobs', component: Jobs },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 

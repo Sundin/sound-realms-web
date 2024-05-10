@@ -16,11 +16,11 @@
           <a href="/download">DOWNLOAD</a>
           <a href="/shop">WEB SHOP</a>
           <a href="/games">OUR GAMES</a>
-          <a href="/newsletter">NEWSLETTER</a>
           <a
             href="https://www.kickstarter.com/discover/advanced?ref=nav_search&term=sound%20realms"
             target="_blank"
           >KICKSTARTER</a>
+          <a href="/jobs">JOB OPENINGS</a>
         </div>
         <div class="link-col">
           <p>LEARN MORE</p>
