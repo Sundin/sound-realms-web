@@ -29,9 +29,11 @@
             role, you will lead our sales and marketing team with the goal of driving revenue growth
             and bringing Sound Realms to the masses. As Head of Sales, you are expected to be in
             charge of all marketing activities, including campaigns and product launches, as well as
-            cultivating the relationship between Sound Realms and our customers. This is a unique
-            opportunity to shape brand and voice of Sound Realms in a very exciting stage of our
-            growth journey. Sounds interesting? Apply now by sending an email to
+            cultivating the relationship between Sound Realms and our customers. A data-driven and
+            experimental approach will be key to success, and therefore you will also be working
+            closely with our tech team. This is a unique opportunity to shape brand and voice of
+            Sound Realms in a very exciting stage of our growth journey. Sounds interesting? Apply
+            now by sending an email to
             <a href="mailto:dm@sound-realms.com">dm@sound-realms.com</a>!
           </p>
           <h2>Content Creator</h2>
