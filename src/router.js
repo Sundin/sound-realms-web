@@ -22,6 +22,7 @@ import Dracula from './adventures/dracula/Dracula.vue';
 import Fist from './adventures/fist/Fist.vue';
 import NotFound from './pages/NotFound.vue';
 import Shop from './shop/Shop.vue';
+import ProductPage from './shop/ProductPage.vue';
 import Checkout from './shop/Checkout.vue';
 import CheckoutLogin from './shop/Login.vue';
 import Success from './shop/Success.vue';
@@ -60,6 +61,7 @@ const routes = [
   { path: '/account/create-account', component: CreateAccount },
   { path: '/account/forgot-password', component: ForgotPassword },
   { path: '/shop', component: Shop },
+  { path: '/shop/product/:id', component: ProductPage },
   { path: '/shop/checkout', component: Checkout },
   { path: '/shop/login', component: CheckoutLogin },
   { path: '/shop/success', component: Success },
